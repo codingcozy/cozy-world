@@ -1,0 +1,16 @@
+.project_iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+.project_card {
+  background: #fff;
+  border: 1px solid #dde4ed;
+  border-radius: 20px;
+  padding: 20px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.05));
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
