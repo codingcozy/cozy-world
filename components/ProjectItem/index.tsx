@@ -12,7 +12,7 @@ interface ProjectItemProps {
 const ProjectItem = ({ project }: ProjectItemProps) => {
   return (
     <a href={project.url} className={cx("project_card")}>
-      <Image src={""} alt="" className={cx("thumbnail")}></Image>
+      {/* <Image src={""} alt="" className={cx("thumbnail")}></Image> */}
       <strong className={cx("title")}>{project.title}</strong>
       {/* <p className="description">...</p> */}
       {/* <iframe src={project.url} className={cx("project_iframe")}></iframe> */}
