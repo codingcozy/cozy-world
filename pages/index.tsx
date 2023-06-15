@@ -3,10 +3,17 @@ import Header from "@/components/Header";
 import ProjectList from "@/components/ProjectList";
 import style from "./index.module.scss";
 import classnames from "classnames/bind";
+import PostList from "@/components/PostList";
+import { getAllPosts } from "../lib/api";
+import PostType from "@/interfaces/post";
 
 const cx = classnames.bind(style);
 
-export default function Home() {
+interface HomeProps {
+  allPosts: PostType[];
+}
+
+export default function Home({ allPosts }: HomeProps) {
   return (
     <>
       <Head>
@@ -18,8 +25,17 @@ export default function Home() {
       </Head>
       <main className={cx("container")}>
         <Header></Header>
+        <PostList postList={allPosts}></PostList>
         <ProjectList />
       </main>
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts(["title", "date", "slug", "author", "coverImage", "excerpt", "ogImage"]);
+
+  return {
+    props: { allPosts },
+  };
+};

@@ -1,0 +1,12 @@
+.post_list {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 30px;
+}
+
+.post_item {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
