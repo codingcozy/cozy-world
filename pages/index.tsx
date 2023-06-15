@@ -10,7 +10,7 @@ import PostType from "@/interfaces/post";
 const cx = classnames.bind(style);
 
 interface HomeProps {
-  allPost: PostType[];
+  allPosts: PostType[];
 }
 
 export default function Home({ allPosts }: HomeProps) {
