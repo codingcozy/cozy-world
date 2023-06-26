@@ -18,7 +18,6 @@ export const PostList = ({ postList }: PostListProps) => {
         console.log(post);
         return (
           <Link href={`/posts/${post.slug}`} className={cx("post_item")} key={i}>
-            <Image src={post.author.picture} alt="" width={100} height={100}></Image>
             <Image src={post.coverImage} alt="" width={100} height={100}></Image>
             {post.title}
           </Link>

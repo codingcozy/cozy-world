@@ -6,6 +6,7 @@ import classnames from "classnames/bind";
 import PostList from "@/components/PostList";
 import { getAllPosts } from "../lib/api";
 import PostType from "@/interfaces/post";
+import SectionTitle from "@/components/SectionTitle";
 
 const cx = classnames.bind(style);
 
@@ -24,9 +25,21 @@ export default function Home({ allPosts }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={cx("container")}>
-        <Header></Header>
-        <PostList postList={allPosts}></PostList>
-        <ProjectList />
+        <Header />
+        <div className={cx("content")}>
+          <div className={cx("section_wrap")}>
+            <SectionTitle title="Projects" />
+            <div className={cx("section")}>
+              <ProjectList />
+            </div>
+          </div>
+          {/* <div className={cx("section_wrap")}>
+            <SectionTitle title="Posts" />
+            <div className={cx("section")}>
+              <PostList postList={allPosts}></PostList>
+            </div>
+          </div> */}
+        </div>
       </main>
     </>
   );
