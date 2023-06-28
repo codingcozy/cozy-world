@@ -14,10 +14,10 @@ const Header = () => {
         </h1>
         <nav className={cx("nav_area")}>
           <Link href={"/posts"} className={cx("nav_item")}>
-            posts
+            Posts
           </Link>
-          <Link href={"/games"} className={cx("nav_item")}>
-            Game
+          <Link href={"/projects"} className={cx("nav_item")}>
+            Projects
           </Link>
           <Link href={"/about"} className={cx("nav_item")}>
             About

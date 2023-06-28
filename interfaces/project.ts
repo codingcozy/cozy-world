@@ -1,10 +1,12 @@
 import type Author from "./author";
 
-type PostType = {
+type Project = {
   slug: string;
   title: string;
+  url?: string;
+  coverImage?: any;
+  youtubeUrl?: string;
   date: string;
-  coverImage: string;
   author: Author;
   description: string;
   ogImage: {
@@ -13,4 +15,4 @@ type PostType = {
   content: string;
 };
 
-export default PostType;
+export default Project;

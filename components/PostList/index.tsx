@@ -15,11 +15,15 @@ export const PostList = ({ postList }: PostListProps) => {
   return (
     <div className={cx("post_list")}>
       {postList.map((post, i) => {
-        console.log(post);
         return (
           <Link href={`/posts/${post.slug}`} className={cx("post_item")} key={i}>
-            <Image src={post.coverImage} alt="" width={100} height={100}></Image>
-            {post.title}
+            <div className={cx("thumbnail_wrap")}>
+              <Image src={post.coverImage} className={cx("thumbnail")} alt="" width={100} height={100} />
+            </div>
+            <div className={cx("text_area")}>
+              <strong className={cx("title")}>{post.title}</strong>
+              <p className={cx("description")}>{post.description}</p>
+            </div>
           </Link>
         );
       })}

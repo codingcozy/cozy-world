@@ -4,17 +4,19 @@ import ProjectList from "@/components/ProjectList";
 import style from "./index.module.scss";
 import classnames from "classnames/bind";
 import PostList from "@/components/PostList";
-import { getAllPosts } from "../lib/api";
+import { getAllPosts, getAllProjects } from "../lib/api";
 import PostType from "@/interfaces/post";
 import SectionTitle from "@/components/SectionTitle";
+import Project from "@/interfaces/project";
 
 const cx = classnames.bind(style);
 
 interface HomeProps {
   allPosts: PostType[];
+  allProjects: Project[];
 }
 
-export default function Home({ allPosts }: HomeProps) {
+export default function Home({ allPosts, allProjects }: HomeProps) {
   return (
     <>
       <Head>
@@ -30,7 +32,7 @@ export default function Home({ allPosts }: HomeProps) {
           <div className={cx("section_wrap")}>
             <SectionTitle title="Projects" />
             <div className={cx("section")}>
-              <ProjectList />
+              <ProjectList projectList={allProjects} />
             </div>
           </div>
           {/* <div className={cx("section_wrap")}>
@@ -46,9 +48,10 @@ export default function Home({ allPosts }: HomeProps) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts(["title", "date", "slug", "author", "coverImage", "excerpt", "ogImage"]);
+  const allPosts = getAllPosts(["title", "date", "slug", "author", "coverImage", "description", "ogImage"]);
+  const allProjects = getAllProjects(["title", "date", "slug", "author", "coverImage", "description", "ogImage"]);
 
   return {
-    props: { allPosts },
+    props: { allPosts, allProjects },
   };
 };
