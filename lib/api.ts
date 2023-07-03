@@ -2,11 +2,22 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 import Project from "@/interfaces/project";
+import globby from "globby";
 
 const postsDirectory = join(process.cwd(), "_posts");
+const postsCategoryDirectory = (category: string) => join(process.cwd(), `_posts/${category}`);
+
+export function getPostCategories() {
+  return fs.readdirSync(postsDirectory);
+}
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  const categoryList = getPostCategories();
+  let slugList: string[] = [];
+  for (let i in categoryList) {
+    slugList = [...slugList, ...fs.readdirSync(postsCategoryDirectory(categoryList[i]))];
+  }
+  return slugList;
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
@@ -38,12 +49,66 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
-export function getAllPosts(fields: string[] = []) {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+export function getPostByFile(file: string, fields: string[] = []) {
+  let fileNameText: any = file.split("/");
+  const lang = fileNameText[fileNameText.length - 1].replace(/\.md$/, "");
+
+  let fileName = fileNameText[fileNameText.length - 2];
+  const realSlug = fileName.replace(/\.md$/, "");
+  const fileContents = fs.readFileSync(file, "utf8");
+  const { data, content } = matter(fileContents);
+
+  type Items = {
+    [key: string]: any;
+  };
+
+  const items: Items = {};
+
+  // Ensure only the minimal needed data is exposed
+  fields.forEach((field) => {
+    if (field === "slug") {
+      items[field] = realSlug;
+    }
+
+    if (field === "lang") {
+      items[field] = lang;
+    }
+
+    if (field === "content") {
+      items[field] = content;
+    }
+
+    if (field === "tag") {
+      items[field] = [...data[field].split(", ")];
+      return;
+    }
+
+    if (typeof data[field] !== "undefined") {
+      items[field] = data[field];
+    }
+  });
+
+  return items;
+}
+
+interface getPostsProps {
+  category?: string;
+  fields: string[];
+  file?: string;
+  lang?: string;
+}
+
+export async function getPosts({ category = "**", file = "**", fields = [], lang = "en" }: getPostsProps) {
+  // const slugs = getPostSlugs();
+  // const posts = slugs
+  //   .map((slug) => getPostBySlug(slug, fields))
+  //   // sort posts by date in descending order
+  //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  // return posts;
+  const files = await globby([`_posts/${category}/${file}/${lang}.md`]);
+  console.log(files);
+  const posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
   return posts;
 }
 
@@ -60,7 +125,7 @@ export function getProjectBySlug(slug: string, fields: string[] = []) {
   const { data, content } = matter(fileContents);
 
   type Items = {
-    [key: string]: string;
+    [key: string]: any;
   };
 
   const items: Items = {};

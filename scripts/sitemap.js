@@ -50,8 +50,6 @@ const postsSitemapGenerator = async () => {
     "_posts/**/*.md",
   ]);
 
-  // console.log(posts);
-
   const postsSitemap = `
     ${posts
       .map((page) => {
@@ -91,5 +89,3 @@ const postsSitemapGenerator = async () => {
 
   fs.writeFileSync("public/sitemap.xml", formattedSitemap.join(""), "utf8");
 })();
-
-console.log("test");

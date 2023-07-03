@@ -1,8 +1,14 @@
 @import "../../scss/utils";
+@import "../../scss/import/post_content";
 
 .container {
-  padding-top: 60px;
-  background-color: $bg-color;
+  padding: 80px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &.-list {
+    background-color: $bg-color;
+  }
 }
 
 .inner {

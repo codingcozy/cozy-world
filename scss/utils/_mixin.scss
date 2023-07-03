@@ -101,9 +101,9 @@
   @if ($width and $height) {
     width: $width + px;
     height: $height + px;
-    background: no-repeat url(./assets/#{$fileName}.png) 0 0 / contain;
+    background: no-repeat url("./assets/#{$fileName}.png") 0 0 / contain;
   } @else {
-    background-image: url(./assets/#{$fileName}.png);
+    // background-image: url(./assets/#{$fileName}.png);
   }
 }
 

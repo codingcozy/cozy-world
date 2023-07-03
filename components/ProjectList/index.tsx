@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectItem from "../ProjectItem";
 import style from "./ProjectList.module.scss";
 import classnames from "classnames/bind";
@@ -83,16 +83,18 @@ const cx = classnames.bind(style);
 
 interface projectListProps {
   projectList: Project[];
+  count?: number;
 }
 
-const ProjectList = ({ projectList }: projectListProps) => {
+const ProjectList = ({ projectList, count }: projectListProps) => {
+  if (count) {
+    projectList = projectList.slice(0, count);
+  }
+
+  useEffect(() => {}, []);
+
   return (
     <>
-      {/* <ul className={cx("project_list")}>
-      {projectList.map((project: Project, i: any) => (
-        <ProjectItem key={i} project={project}></ProjectItem>
-      ))}
-    </ul> */}
       <ul className={cx("project_list")}>
         {projectList.map((project: Project, i: any) => (
           <ProjectItem key={i} project={project}></ProjectItem>

@@ -20,6 +20,13 @@
   margin-top: 20px;
 }
 
+.title_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
 .project_title {
   font-size: 35px;
   margin: 26px 0;

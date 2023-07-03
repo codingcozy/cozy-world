@@ -21,7 +21,7 @@ type Props = {
 
 export default function Project({ projects }: Props) {
   const router = useRouter();
-  const title = ` Next.js Blog Example with ${CMS_NAME}`;
+  const title = `Cozy World | Projects`;
   // if (!router.isFallback && !project?.slug) {
   //   return <ErrorPage statusCode={404} />;
   // }
@@ -30,21 +30,23 @@ export default function Project({ projects }: Props) {
       {router.isFallback ? (
         " Loading…"
       ) : (
-        <div className={cx("container", "-list")}>
-          <Header />
-          <div className={cx("inner")}>
-            <article className="mb-32">
-              <Head>
-                <title>{title}</title>
-                {/* <meta property="og:image" content={project.ogImage.url} /> */}
-              </Head>
-              <SectionTitle title="Projects"></SectionTitle>
-              <div className={cx("project_list")}>
-                <ProjectList projectList={projects}></ProjectList>
-              </div>
-            </article>
+        <>
+          <Head>
+            <title>{title}</title>
+            {/* <meta property="og:image" content={project.ogImage.url} /> */}
+          </Head>
+          <div className={cx("container", "-list")}>
+            <Header />
+            <div className={cx("inner")}>
+              <article className="mb-32">
+                <SectionTitle title="Projects"></SectionTitle>
+                <div className={cx("project_list")}>
+                  <ProjectList projectList={projects}></ProjectList>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );

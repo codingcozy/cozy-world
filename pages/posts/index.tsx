@@ -1,25 +1,26 @@
 import { useRouter } from "next/router";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
+import { getPostCategories, getPosts } from "../../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import Header from "@/components/Header";
 import style from "./posts.module.scss";
 import classnames from "classnames/bind";
 import PostList from "@/components/PostList";
 import SectionTitle from "@/components/SectionTitle";
 import PostType from "@/interfaces/post";
+import CategoryList from "@/components/CategoryList";
 
 const cx = classnames.bind(style);
 
 type Props = {
   posts: PostType[];
+  categories: string[];
   morePosts: PostType[];
   preview?: boolean;
 };
 
-export default function Post({ posts }: Props) {
+export default function Post({ posts, categories }: Props) {
   const router = useRouter();
-  const title = ` Next.js Blog Example with ${CMS_NAME}`;
+  const title = `Cozy World | Post`;
   // if (!router.isFallback && !project?.slug) {
   //   return <ErrorPage statusCode={404} />;
   // }
@@ -28,21 +29,24 @@ export default function Post({ posts }: Props) {
       {router.isFallback ? (
         " Loading…"
       ) : (
-        <div className={cx("container", "-list")}>
-          <Header />
-          <div className={cx("inner")}>
-            <article className="mb-32">
-              <Head>
-                <title>{title}</title>
-                {/* <meta property="og:image" content={project.ogImage.url} /> */}
-              </Head>
-              <SectionTitle title="Posts"></SectionTitle>
-              <div className={cx("project_list")}>
-                <PostList postList={posts}></PostList>
-              </div>
-            </article>
+        <>
+          <Head>
+            <title>{title}</title>
+            {/* <meta property="og:image" content={project.ogImage.url} /> */}
+          </Head>
+          <div className={cx("container", "-list")}>
+            <Header />
+            <div className={cx("inner")}>
+              <article>
+                <SectionTitle title="Posts"></SectionTitle>
+                <CategoryList categoryList={categories}></CategoryList>
+                <div className={cx("project_list")}>
+                  <PostList postList={posts}></PostList>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );
@@ -55,11 +59,13 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const allPosts = getAllPosts(["title", "date", "slug", "author", "coverImage", "description", "ogImage"]);
+  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category"] });
+  const categories = await getPostCategories();
 
   return {
     props: {
       posts: allPosts,
+      categories: categories,
     },
   };
 }

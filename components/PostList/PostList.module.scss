@@ -8,8 +8,9 @@
   display: flex;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   height: 200px;
+  overflow: hidden;
 }
 
 .thumbnail_wrap {
@@ -24,14 +25,36 @@
 }
 
 .text_area {
-  padding: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .title {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .description {
   margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
+.tag_list {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: auto 0 0;
+  font-size: 14px;
+}
+
+.tag_link {
+  padding: 6px 0;
+}
+
+.meta {
+  margin-top: 16px;
 }
