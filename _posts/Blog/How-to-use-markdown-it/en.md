@@ -307,12 +307,8 @@ Please refer to the code below.
 }
 ```
 
-<img loading="lazy" width="1037" alt="249997973-1552fe96-9d87-4844-a7fd-2bacbaa031c0" src="https://github.com/codingcozy/cozy-world/assets/127212769/5e2fb540-502f-4021-8c4c-455679760aeb" />
-
-<Image width="846" height="190"  alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/3.png" />
+<Image width="846" height="190"  alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/4.png" />
 
 There are still many things to add, but it looks like a normal blog post.
-
 Today, I learned how to decorate a blog article using MarkDown-IT.
-
 Thank you for reading long posts.

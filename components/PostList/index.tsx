@@ -25,7 +25,6 @@ export const PostList = ({ postList }: PostListProps) => {
   return (
     <div className={cx("post_list")}>
       {postList.map((post, i) => {
-        console.log(post);
         return (
           <div className={cx("post_item")} key={i}>
             <Link className={cx("thumbnail_wrap")} href={`/${lang}/posts/${post.category}/${post.slug}`}>
@@ -37,8 +36,8 @@ export const PostList = ({ postList }: PostListProps) => {
                 <p className={cx("description")}>{post.description}</p>
               </Link>
               <ul className={cx("tag_list")}>
-                {post.tag.map((tag) => (
-                  <li className={cx("tag_item")}>
+                {post.tag.map((tag, i) => (
+                  <li className={cx("tag_item")} key={i}>
                     <Link className={cx("tag_link")} href={`/tags/${tag}`}>
                       <span>#</span>
                       {tag}

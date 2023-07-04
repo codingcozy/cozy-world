@@ -15,8 +15,8 @@ export const CategoryList = ({ categoryList }: CategoryListProps) => {
 
   return (
     <ul className={cx("category_list")}>
-      {categoryList.map((category: string) => (
-        <li className={cx("category_item")}>
+      {categoryList.map((category: string, i: any) => (
+        <li className={cx("category_item")} key={i}>
           <Link className={cx("link")} href={`/${router.query.lang}/posts/${category}`}>
             <span>{category}</span>
           </Link>

@@ -8,25 +8,35 @@ const getDate = new Date().toISOString();
 const YOUR_AWESOME_DOMAIN = "https://cozy-world.vercel.app";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
+const langList = ["ko", "en", "ja"];
 
 const pagesSitemapGenerator = async () => {
   const pages = await globby([
     // include
     "pages/**/*.tsx",
+    "pages/**/**/*.tsx",
     "pages/*.tsx",
     "pages/_*.tsx",
     // exclude
     "!pages/_*.tsx",
+    "!pages/index.tsx",
+    "!pages/[slug].tsx",
     "!pages/**/[slug].tsx",
+    "!pages/**/**/[category]/index.tsx",
+    "!pages/**/**/[slug].tsx",
   ]);
 
-  const pagesSitemap = `
+  return `${langList
+    .map((lang) => {
+      return `
     ${pages
       .map((page) => {
         const path = page
           .replace("pages/", "")
+          .replace("[lang]", lang)
           .replace(".tsx", "")
           .replace(/\/index/g, "");
+
         const routePath = path === "index" ? "" : path;
         return `
           <url>
@@ -37,9 +47,30 @@ const pagesSitemapGenerator = async () => {
       })
       .join("")}
   `;
-
-  return pagesSitemap;
+    })
+    .join("")}`;
 };
+
+const categoriesSitemapGenerator = () => {
+  const categories = fs.readdirSync("_posts/");
+
+  return `${langList
+    .map((lang) => {
+      return `${categories
+        .map(
+          (category) =>
+            `<url>
+              <loc>${YOUR_AWESOME_DOMAIN}/${lang}/posts/${category}</loc>
+              <lastmod>${getDate}</lastmod>
+            </url>
+            `
+        )
+        .join("")}`;
+    })
+    .join("")}`;
+};
+
+console.log(categoriesSitemapGenerator());
 
 const postsSitemapGenerator = async () => {
   const posts = await globby([
@@ -48,23 +79,31 @@ const postsSitemapGenerator = async () => {
     "_projects/**/*.md",
     "_posts/*.md",
     "_posts/**/*.md",
+    "_posts/**/**/*.md",
   ]);
 
   const postsSitemap = `
-    ${posts
-      .map((page) => {
-        const path = page
-          .replace("_projects", "projects")
-          .replace("_posts", "posts")
-          .replace(".md", "")
-          .replace(/\/index/g, "");
-        const routePath = path === "index" ? "" : path;
-        return `
-          <url>
-            <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
-            <lastmod>${getDate}</lastmod>
-          </url>
-        `;
+    ${langList
+      .map((lang) => {
+        return `${posts
+          .map((page) => {
+            const path = page
+              .replace("_projects", "projects")
+              .replace("_posts", "posts")
+              .replace(".md", "")
+              .replace(/\/ko|\/en|\/ja/g, "")
+              .replace(/\/index/g, "");
+            let routePath = path === "index" ? "" : path;
+            routePath = `${lang}/${routePath}`;
+
+            return `
+            <url>
+              <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
+              <lastmod>${getDate}</lastmod>
+            </url>
+          `;
+          })
+          .join("")}`;
       })
       .join("")}
   `;
@@ -81,6 +120,7 @@ const postsSitemapGenerator = async () => {
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
     >
       ${await pagesSitemapGenerator()}
+      ${categoriesSitemapGenerator()}
 			${await postsSitemapGenerator()}
     </urlset>
   `;
