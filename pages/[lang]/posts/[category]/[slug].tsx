@@ -32,7 +32,7 @@ type Props = {
 
 export default function Post({ post, content }: Props) {
   const router = useRouter();
-  const title = `${post.title} | Cozy World`;
+  const title = `${post.title} | Cozy Coder`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }

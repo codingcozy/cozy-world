@@ -13,7 +13,7 @@ const Header = () => {
     <header className={cx("header")}>
       <div className={cx("inner")}>
         <h1 className={cx("title")}>
-          <Link href={`/${router.query.lang}`}>Cozy World</Link>
+          <Link href={`/${router.query.lang}`}>Cozy Coder</Link>
         </h1>
         <nav className={cx("nav_area")}>
           <Link href={`/${router.query.lang}/posts`} className={cx("nav_item")}>
