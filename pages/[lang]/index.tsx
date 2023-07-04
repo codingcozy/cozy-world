@@ -20,7 +20,6 @@ interface HomeProps {
 
 export default function Home({ allPosts, allProjects }: HomeProps) {
   const router = useRouter();
-  console.log();
 
   if (router.isFallback) {
     return <>loadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloadingloading</>;
@@ -57,7 +56,6 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"], lang: params.lang });
   const allProjects = getAllProjects(["title", "date", "slug", "author", "coverImage", "description", "ogImage"]);
-  console.log(allPosts);
   return {
     props: { allPosts, allProjects },
   };

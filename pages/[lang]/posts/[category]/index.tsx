@@ -92,29 +92,8 @@ export async function getStaticPaths() {
     });
   }
 
-  console.log(paths);
-
   return {
     paths,
-    // paths: categories.map((category) => {
-    //   return [
-    //     {
-    //       params: {
-    //         category,
-    //       },
-    //     },
-    //     {
-    //       params: {
-    //         category,
-    //       },
-    //     },
-    //     {
-    //       params: {
-    //         category,
-    //       },
-    //     },
-    //   ];
-    // }),
     fallback: false,
   };
 }

@@ -24,7 +24,7 @@ In the previous article, I created a blog with Vercel's Blog-STARTER, and when I
 ## MarkDown-IT installation
 
 ```bash
-yarn add markdonw-it
+yarn add markdown-it
 ```
 
 ## MarkDown-IT application

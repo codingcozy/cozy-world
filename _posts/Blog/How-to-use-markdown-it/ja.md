@@ -1,39 +1,35 @@
 ---
-title: "How to use markdown-it"
-description: "share how to convert and customize markdown to html with markdown-it."
-coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2023-07-01T05:35:07.322Z"
+title: "Markdown-Itの使用方法"
+description: "MarkDown-ITを使用してMarkdownをHTMLに変換する方法を要約しました"
+coverImage: "/assets/posts/Blog/How-to-use-markdown-it/cover.png"
+date: "2023-07-04T00:35:07.322Z"
 author:
   name: Cozy Coding
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/posts/Blog/How-to-use-markdown-it/cover.png"
 tag: markdown-it
 category: Blog
 ---
 
-# How to use markdown-it
-
-:::tip{.warning}
-오늘은 markdown-it로 마크다운을 html로 변환하고 커스텀하는 방법에 대해서 공유하려고 합니다.
-:::
+# MarkDown-IT を使用して、MarkDown を HTML に変換します
 
 :::tip
-Today, I would like to share how to convert and customize markdown to html with markdown-it.
+今日は、Markdown を HTML に変換し、Markdown-IT でカスタマイズする方法を共有します。
 :::
 
-이전 글에서 vercel의 blog-starter로 블로그를 만들었는데, 이 보일러 플레이트에서 마크다운을 작성하면 아래와 같이 이쁘지 않게 작성되는데요.
+前の記事では、Vercel のブログスターターでブログを作成しました。
 
 <Image width="1533" height="830" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/1.png" />
 
-## markdown-it 설치
+## MarkDown-IT インストール
 
 ```bash
-yarn add markdonw-it
+yarn add markdown-it
 ```
 
-## markdown-it 적용
+## Markdown-IT アプリケーション
 
-vercel의 blog-starter에 적용되어있던 코드를 지우고 아래와 같이 markdown-it를 적용합니다.
+以下に示すように、vercel のブログスターターに適用されたコードを消去し、Markdown-IT を適用します。
 
 ```tsx
 import markdownIt from "markdown-it";
@@ -44,15 +40,15 @@ export default function Post({ post }: Props) {
 }
 ```
 
-## highlightjs 설정
+## HighlightJS 設定
 
-코드블럭 하이라이팅 처리를 하기 위해서 highlightjs 설치해줍니다.
+コードブロックのハイライトに highlightjs をインストールします。
 
 ```bash
 yarn add markdown-it-highlightjs
 ```
 
-아래와 같이 수정해줍니다.
+以下のように変更します。
 
 ```tsx
 import markdownIt from "markdown-it";
@@ -64,17 +60,17 @@ export default function Post({ post }: Props) {
 }
 ```
 
-[https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/)에서 원하는 테마를 골라줍니다.
+[https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/)あなたが望むテーマを選択してください。
 
-[https://github.com/highlightjs/highlight.js/tree/main/src/styles](https://github.com/highlightjs/highlight.js/tree/main/src/styles) 원하는 테마의 css파일을 가져와 저장소에 넣어줍니다.
+[https://github.com/highlightjs/highlight.js/tree/main/src/styles](https://github.com/highlightjs/highlight.js/tree/main/src/styles) 必要なテーマの CSS ファイルを取得し、リポジトリに入れます。
 
 <Image width="846" height="121"  alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/2.png" />
 
-스타일까지 추가하면 위 사진처럼 적용되는데요. 뭔가 부족한 부분이 있어서 css를 아래와 같이 커스텀해주었습니다.
+スタイルを追加すると、上記のように適用されます。不足しているものがあったので、次のように CSS をカスタマイズしました。
 
 <Image width="846" height="190"  alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/3.png" />
 
-필요하신 분들은 아래 css를 복사해 사용하시기 바랍니다.
+必要な場合は、以下に CSS をコピーしてください。
 
 ```css
 pre {
@@ -264,7 +260,7 @@ code.hljs {
 
 ## 커스텀 컨테이터 추가
 
-markdown-it의 여러 플러그인 중에서 커스텀 컨테이너를 추가할 수 있는 플러그인이 있어 적용해보겠습니다.
+Markdown-IT のプラグインの中には、カスタムコンテナを追加するプラグインがあります。
 
 [https://github.com/markdown-it/markdown-it-container](https://github.com/markdown-it/markdown-it-container)
 
@@ -272,14 +268,14 @@ markdown-it의 여러 플러그인 중에서 커스텀 컨테이너를 추가할
 yarn add markdown-it-container
 ```
 
-사용 방법은 아래와 같습니다.
+使用方法は次のとおりです。
 
 ```tsx
 import markdownContainer from "markdown-it-container";
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 ```
 
-markdown-it-container를 넣어주고 두번째 인자로는 컨테이너 이름을 넣어줍니다.
+MarkDown-IIT-Container を追加し、2 番目の引数はコンテナ名を追加することです。
 
 ```md
 :::tip
@@ -287,8 +283,8 @@ _here be dragons_
 :::
 ```
 
-위와 같이 :::로 감싸고 컨테이너 이름을 넣어서 마크다운을 작성하면 아래와 같은 html 컨테이너로 변경되는데요.
-사용자의 취향에 맞게 스타일을 적용하면 됩니다.
+上に示してコンテナ名を書くように:::にラップすると、以下に示すように HTML コンテナに変更します。
+あなたの好みに合わせてスタイルを適用できます。
 
 ```html
 <div class="tip">
@@ -296,8 +292,8 @@ _here be dragons_
 </div>
 ```
 
-저는 위와 같이 커스텀 해서 사용하고 있습니다.
-아래 코드를 참고해주세요.
+上記のように使用しています。
+以下のコードを参照してください。
 
 ```css
 .tip {
@@ -315,8 +311,8 @@ _here be dragons_
 
 <Image width="846" height="190"  alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/3.png" />
 
-아직 추가해야될 내용들이 많이 있지만 이정도만 해도 평범한 블로그 글 같아 보이네요.
+まだ追加すべきことはたくさんありますが、通常のブログ投稿のように見えます。
 
-오늘은 이렇게 markdown-it를 활용해서 블로그 글을 꾸미는 방법에 대해 알아보았습니다.
+今日、私は MarkDown-IT を使用してブログ記事を飾る方法を学びました。
 
-긴 글 읽어주셔서 감사합니다.
+長い投稿を読んでいただきありがとうございます。

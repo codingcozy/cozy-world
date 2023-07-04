@@ -1,6 +1,6 @@
 ---
 title: "markdown-it 사용법"
-description: "markdonw-it를 사용해서 markdown을 html로 변환하는 방법에 대해서 정리했습니다"
+description: "markdown-it를 사용해서 markdown을 html로 변환하는 방법에 대해서 정리했습니다"
 coverImage: "/assets/posts/Blog/How-to-use-markdown-it/cover.png"
 date: "2023-07-04T00:35:07.322Z"
 author:
@@ -24,7 +24,7 @@ category: Blog
 ## markdown-it 설치
 
 ```bash
-yarn add markdonw-it
+yarn add markdown-it
 ```
 
 ## markdown-it 적용

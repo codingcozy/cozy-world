@@ -5,7 +5,7 @@ const prettier = require("prettier");
 
 const getDate = new Date().toISOString();
 
-const YOUR_AWESOME_DOMAIN = "https://cozy-world.vercel.app";
+const YOUR_AWESOME_DOMAIN = "https://cozy-coder.com";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 const langList = ["ko", "en", "ja"];
@@ -70,7 +70,7 @@ const categoriesSitemapGenerator = () => {
     .join("")}`;
 };
 
-console.log(categoriesSitemapGenerator());
+// console.log(categoriesSitemapGenerator());
 
 const postsSitemapGenerator = async () => {
   const posts = await globby([
