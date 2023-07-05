@@ -5,20 +5,21 @@ import style from "./DropdownSelectView.module.scss";
 const cx = classnames.bind(style);
 
 interface DropdownSelectViewProps {
+  selectedOption: string;
   optionList: any[];
   showOptions: boolean;
   onClickOption: any;
   onClickSelect: any;
 }
 
-export const DropdownSelectView = ({ showOptions, optionList, onClickOption, onClickSelect }: DropdownSelectViewProps) => {
+export const DropdownSelectView = ({ selectedOption, showOptions, optionList, onClickOption, onClickSelect }: DropdownSelectViewProps) => {
   return (
     <>
       <div className={cx("container")}>
         {/* [D] 필터 확장/축소 isExpanded로 제어 */}
         {/* [D] 옵션 리스트에서 선택된 텍스트로 변경해주세요 */}
         <button type="button" className={cx("button_filter")} aria-expanded={true} onClick={() => onClickSelect()}>
-          EN
+          {selectedOption}
         </button>
         {showOptions && (
           <ul className={cx("option_list")} role={"listbox"}>

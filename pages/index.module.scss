@@ -1,9 +1,11 @@
+@import "../scss/utils";
+
 .container {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e9eef4;
+  background-color: $bg-color;
   box-sizing: border-box;
 }
 

@@ -10,10 +10,12 @@ const cx = classnames.bind(style);
 const Header = () => {
   const router = useRouter();
   const [showOption, setShowOption] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<any>(router.query.lang);
 
   const onClickOption = (lang: string) => {
     if (router.query.lang !== lang) {
-      router.push(lang);
+      router.push({ query: { ...router.query, lang } });
+      setSelectedOption(lang);
     }
     setShowOption(false);
   };
@@ -36,7 +38,13 @@ const Header = () => {
             Projects
           </Link>
           <div className={cx("nav_item")}>
-            <DropdownSelectView showOptions={showOption} optionList={[{ value: "ko" }, { value: "en" }, { value: "ja" }]} onClickSelect={onClickSelect} onClickOption={onClickOption}></DropdownSelectView>
+            <DropdownSelectView
+              selectedOption={selectedOption}
+              showOptions={showOption}
+              optionList={[{ value: "ko" }, { value: "en" }, { value: "ja" }]}
+              onClickSelect={onClickSelect}
+              onClickOption={onClickOption}
+            ></DropdownSelectView>
           </div>
         </nav>
       </div>
