@@ -18,6 +18,7 @@ import { h } from "hastscript";
 import markdownIt from "markdown-it";
 import highlightjs from "markdown-it-highlightjs";
 import markdownContainer from "markdown-it-container";
+import { LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 // const md = markdownIt({ html: true });
 
@@ -36,6 +37,8 @@ export default function Post({ post, content }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+  console.log(router.query.lang);
+  console.log(post);
   return (
     <>
       {router.isFallback ? (
@@ -44,6 +47,23 @@ export default function Post({ post, content }: Props) {
         <>
           <Head>
             <title>{title}</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" data-gatsby-head="true" />
+            <meta property="og:url" content="" data-gatsby-head="true" />
+            <meta property="og:type" content="website" data-gatsby-head="true" />
+            <meta property="og:site_name" content={`${post.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+            <meta property="og:title" content={`${post.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+            <meta property="og:description" content={post.description} data-gatsby-head="true" />
+            <meta property="og:image" content={post.ogImage.url} data-gatsby-head="true" />
+            <meta property="og:locale" content={LANG_LOCALE["en"]} data-gatsby-head="true" />
+            <meta name="twitter:card" content="summary_large_image" data-gatsby-head="true" />
+            <meta property="twitter:domain" content="cozy-coder.com" data-gatsby-head="true" />
+            <meta property="twitter:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
+            <meta name="twitter:title" content={`${post.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+            <meta name="twitter:description" content={post.description} data-gatsby-head="true" />
+            <meta name="twitter:image" content={post.ogImage.url} data-gatsby-head="true" />
+            <meta name="twitter:label1" content={post.category} data-gatsby-head="true" />
+            <meta name="twitter:data1" content={`Dev | ${SITE_NAME}`} data-gatsby-head="true" />
+            <meta name="article:published_time" content={post.date} data-gatsby-head="true" />
             <meta property="og:image" content={post.ogImage.url} />
           </Head>
           <Header></Header>
@@ -97,7 +117,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "date", "slug", "author", "content", "ogImage", "coverImage", "category"], lang: params.lang });
+  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date"], lang: params.lang });
   // console.log(post);
   // const content = await markdownToHtml(post.content || "");
   const content = await serialize(post.content, {

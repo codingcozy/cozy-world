@@ -5,7 +5,7 @@ import classnames from "classnames/bind";
 const cx = classnames.bind(style);
 
 interface SectoinTitleProps {
-  title: string;
+  title: React.ReactNode | string;
 }
 
 export const SectionTitle = ({ title }: SectoinTitleProps) => {
