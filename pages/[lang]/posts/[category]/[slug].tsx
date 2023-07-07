@@ -37,8 +37,6 @@ export default function Post({ post, content }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  console.log(router.query.lang);
-  console.log(post);
   return (
     <>
       {router.isFallback ? (

@@ -19,8 +19,6 @@ export const PostList = ({ postList }: PostListProps) => {
   // const {
   //   query: { lang },
   // } = useRouter();
-  console.log(lang);
-  console.log(router);
 
   return (
     <div className={cx("post_list")}>
