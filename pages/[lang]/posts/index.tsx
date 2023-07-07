@@ -9,6 +9,7 @@ import SectionTitle from "@/components/SectionTitle";
 import PostType from "@/interfaces/post";
 import CategoryList from "@/components/CategoryList";
 import { LANG_LIST } from "@/lib/constants";
+import CustomHead from "@/components/CustomHead";
 
 const cx = classnames.bind(style);
 
@@ -31,10 +32,7 @@ export default function Post({ posts, categories }: Props) {
         " Loading…"
       ) : (
         <>
-          <Head>
-            <title>{title}</title>
-            {/* <meta property="og:image" content={project.ogImage.url} /> */}
-          </Head>
+          <CustomHead type="home" />
           <div className={cx("container", "-list")}>
             <Header />
             <div className={cx("inner")}>

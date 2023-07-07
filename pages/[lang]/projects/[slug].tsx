@@ -8,6 +8,7 @@ import style from "./projects.module.scss";
 import classnames from "classnames/bind";
 import markdownIt from "markdown-it";
 import highlightjs from "markdown-it-highlightjs";
+import CustomHead from "@/components/CustomHead";
 const md = markdownIt({ html: true }).use(highlightjs);
 
 const cx = classnames.bind(style);
@@ -31,10 +32,11 @@ export default function Project({ project }: Props) {
         " Loading…"
       ) : (
         <>
-          <Head>
+          <CustomHead type="home" />
+          {/* <Head>
             <title>{title}</title>
             <meta property="og:image" content={project.ogImage.url} />
-          </Head>
+          </Head> */}
           <div className={cx("container")}>
             <Header />
             <div className={cx("inner")}>

@@ -10,6 +10,7 @@ import style from "./projects.module.scss";
 import classnames from "classnames/bind";
 import ProjectList from "@/components/ProjectList";
 import SectionTitle from "@/components/SectionTitle";
+import CustomHead from "@/components/CustomHead";
 
 const cx = classnames.bind(style);
 
@@ -31,10 +32,7 @@ export default function Project({ projects }: Props) {
         " Loading…"
       ) : (
         <>
-          <Head>
-            <title>{title}</title>
-            {/* <meta property="og:image" content={project.ogImage.url} /> */}
-          </Head>
+          <CustomHead type="home" />
           <div className={cx("container", "-list")}>
             <Header />
             <div className={cx("inner")}>
