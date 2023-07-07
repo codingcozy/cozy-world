@@ -32,7 +32,7 @@ export default function Project({ project }: Props) {
         " Loading…"
       ) : (
         <>
-          <CustomHead type="home" />
+          <CustomHead type="project" project={project} />
           {/* <Head>
             <title>{title}</title>
             <meta property="og:image" content={project.ogImage.url} />

@@ -5,15 +5,17 @@ import { LANG_LOCALE, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/consta
 import { useRouter } from "next/router";
 import Head from "next/head";
 import PostType from "@/interfaces/post";
+import Project from "@/interfaces/project";
 
 const cx = classnames.bind(style);
 
 interface SectoinTitleProps {
-  type: "home" | "post";
+  type: "home" | "post" | "project";
   post?: PostType;
+  project?: Project;
 }
 
-export const CustomHead = ({ type, post }: SectoinTitleProps) => {
+export const CustomHead = ({ type, post, project }: SectoinTitleProps) => {
   const router = useRouter();
   let lang: string = "en";
   if (router.query.lang && typeof router.query.lang === "string") {
@@ -24,7 +26,6 @@ export const CustomHead = ({ type, post }: SectoinTitleProps) => {
     return (
       <Head>
         <title>{`${post.title} | ${SITE_NAME}`}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" data-gatsby-head="true" />
 
         {/* Facebook og Tags */}
         <meta property="og:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
@@ -47,11 +48,34 @@ export const CustomHead = ({ type, post }: SectoinTitleProps) => {
         <meta name="article:published_time" content={post.date} data-gatsby-head="true" />
       </Head>
     );
+  } else if (type === "project" && project) {
+    return (
+      <Head>
+        <title>{`${project.title} | ${SITE_NAME}`}</title>
+
+        {/* Facebook og Tags */}
+        <meta property="og:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
+        <meta property="og:type" content="website" data-gatsby-head="true" />
+        <meta property="og:site_name" content={`${project.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+        <meta property="og:title" content={`${project.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+        <meta property="og:description" content={project.description} data-gatsby-head="true" />
+        <meta property="og:image" content={project.ogImage.url} data-gatsby-head="true" />
+        <meta property="og:locale" content={LANG_LOCALE[lang]} data-gatsby-head="true" />
+
+        {/* twitter og Tags */}
+        <meta name="twitter:card" content="summary_large_image" data-gatsby-head="true" />
+        <meta property="twitter:domain" content="cozy-coder.com" data-gatsby-head="true" />
+        <meta property="twitter:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
+        <meta name="twitter:title" content={`${project.title} | ${SITE_NAME}`} data-gatsby-head="true" />
+        <meta name="twitter:description" content={project.description} data-gatsby-head="true" />
+        <meta name="twitter:image" content={project.ogImage.url} data-gatsby-head="true" />
+        <meta name="article:published_time" content={project.date} data-gatsby-head="true" />
+      </Head>
+    );
   } else {
     return (
       <Head>
         <title>{SITE_NAME}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" data-gatsby-head="true" />
         <meta name="description" content={SITE_DESCRIPTION[lang]} />
 
         {/* Facebook og Tags */}
