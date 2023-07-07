@@ -10,6 +10,7 @@ import { getPosts, getPostCategories, getAllProjects } from "@/lib/api";
 import Project from "@/interfaces/project";
 import Section from "@/components/Section";
 import ProjectList from "@/components/ProjectList";
+import { LANG_LIST } from "@/lib/constants";
 
 const cx = classnames.bind(style);
 
@@ -63,24 +64,11 @@ export async function getStaticProps({ params }: Params) {
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      {
-        params: {
-          lang: "ko",
-        },
+    paths: LANG_LIST.map((lang) => ({
+      params: {
+        lang,
       },
-      {
-        params: {
-          lang: "en",
-        },
-      },
-      {
-        params: {
-          lang: "jp",
-        },
-      },
-      ,
-    ],
+    })),
     fallback: true,
   };
 }

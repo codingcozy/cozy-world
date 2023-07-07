@@ -8,6 +8,7 @@ import PostList from "@/components/PostList";
 import SectionTitle from "@/components/SectionTitle";
 import PostType from "@/interfaces/post";
 import CategoryList from "@/components/CategoryList";
+import { LANG_LIST } from "@/lib/constants";
 
 const cx = classnames.bind(style);
 
@@ -71,23 +72,11 @@ export async function getStaticProps({ params }: Params) {
 }
 export async function getStaticPaths() {
   return {
-    paths: [
-      {
-        params: {
-          lang: "ko",
-        },
+    paths: LANG_LIST.map((lang) => ({
+      params: {
+        lang,
       },
-      {
-        params: {
-          lang: "en",
-        },
-      },
-      {
-        params: {
-          lang: "ja",
-        },
-      },
-    ],
+    })),
     fallback: false,
   };
 }

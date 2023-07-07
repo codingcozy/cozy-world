@@ -4,6 +4,7 @@ import classnames from "classnames/bind";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { DropdownSelectView } from "../DropdownSelectView";
+import { LANG_LIST } from "@/lib/constants";
 
 const cx = classnames.bind(style);
 
@@ -38,13 +39,7 @@ const Header = () => {
             Projects
           </Link>
           <div className={cx("nav_item")}>
-            <DropdownSelectView
-              selectedOption={selectedOption}
-              showOptions={showOption}
-              optionList={[{ value: "ko" }, { value: "en" }, { value: "ja" }]}
-              onClickSelect={onClickSelect}
-              onClickOption={onClickOption}
-            ></DropdownSelectView>
+            <DropdownSelectView selectedOption={selectedOption} showOptions={showOption} optionList={LANG_LIST.map((lang) => ({ value: lang }))} onClickSelect={onClickSelect} onClickOption={onClickOption}></DropdownSelectView>
           </div>
         </nav>
       </div>

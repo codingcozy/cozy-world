@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { getProjectBySlug, getAllProjects } from "../../../lib/api";
 import Head from "next/head";
-import { CMS_NAME } from "../../../lib/constants";
+import { CMS_NAME, LANG_LIST } from "../../../lib/constants";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import type ProjectType from "../../../interfaces/project";
 import Header from "@/components/Header";
@@ -70,23 +70,11 @@ export async function getStaticProps({ params }: Params) {
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      {
-        params: {
-          lang: "ko",
-        },
+    paths: LANG_LIST.map((lang) => ({
+      params: {
+        lang,
       },
-      {
-        params: {
-          lang: "en",
-        },
-      },
-      {
-        params: {
-          lang: "ja",
-        },
-      },
-    ],
+    })),
     fallback: false,
   };
 }
