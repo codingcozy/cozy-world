@@ -43,7 +43,7 @@ const pagesSitemapGenerator = async () => {
           return `
             <url>
               <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
-              ${langList.map((lang) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${YOUR_AWESOME_DOMAIN}/${langpath.replace("[lang]", lang)}"></xhtml:link>`).join("\n")}
+              ${langList.map((lang) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${YOUR_AWESOME_DOMAIN}/${langpath.replace("[lang]", lang)}" />`).join("\n")}
               <lastmod>${getDate}</lastmod>
             </url>
           `;
@@ -64,7 +64,7 @@ const categoriesSitemapGenerator = () => {
           (category) =>
             `<url>
               <loc>${YOUR_AWESOME_DOMAIN}/${lang}/posts/${category}</loc>
-              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/posts/${category}"></xhtml:link>`).join("\n")}
+              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/posts/${category}" />`).join("\n")}
               <lastmod>${getDate}</lastmod>
             </url>
             `
@@ -102,7 +102,7 @@ const postsSitemapGenerator = async () => {
             return `
             <url>
               <loc>${YOUR_AWESOME_DOMAIN}/${lang}/${routePath}</loc>
-              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/${routePath}"></xhtml:link>`).join("\n")}
+              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/${routePath}" />`).join("\n")}
               <lastmod>${getDate}</lastmod>
             </url>
           `;
