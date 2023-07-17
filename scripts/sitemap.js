@@ -8,7 +8,7 @@ const getDate = new Date().toISOString();
 const YOUR_AWESOME_DOMAIN = "https://cozy-coder.com";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
-const langList = ["ko", "en", "ja"];
+const langList = ["en", "ko", "ja"];
 
 const pagesSitemapGenerator = async () => {
   const pages = await globby([
@@ -29,23 +29,26 @@ const pagesSitemapGenerator = async () => {
   return `${langList
     .map((lang) => {
       return `
-    ${pages
-      .map((page) => {
-        const path = page
-          .replace("pages/", "")
-          .replace("[lang]", lang)
-          .replace(".tsx", "")
-          .replace(/\/index/g, "");
+      ${pages
+        .map((page) => {
+          const langpath = page
+            .replace("pages/", "")
+            .replace(".tsx", "")
+            .replace(/\/index/g, "");
 
-        const routePath = path === "index" ? "" : path;
-        return `
-          <url>
-            <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
-            <lastmod>${getDate}</lastmod>
-          </url>
-        `;
-      })
-      .join("")}
+          const path = langpath.replace("[lang]", lang);
+
+          const routePath = path === "index" ? "" : path;
+
+          return `
+            <url>
+              <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
+              ${langList.map((lang) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${YOUR_AWESOME_DOMAIN}/${langpath.replace("[lang]", lang)}"></xhtml:link>`).join("\n")}
+              <lastmod>${getDate}</lastmod>
+            </url>
+          `;
+        })
+        .join("")}
   `;
     })
     .join("")}`;
@@ -61,6 +64,7 @@ const categoriesSitemapGenerator = () => {
           (category) =>
             `<url>
               <loc>${YOUR_AWESOME_DOMAIN}/${lang}/posts/${category}</loc>
+              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/posts/${category}"></xhtml:link>`).join("\n")}
               <lastmod>${getDate}</lastmod>
             </url>
             `
@@ -94,11 +98,11 @@ const postsSitemapGenerator = async () => {
               .replace(/\/ko|\/en|\/ja/g, "")
               .replace(/\/index/g, "");
             let routePath = path === "index" ? "" : path;
-            routePath = `${lang}/${routePath}`;
 
             return `
             <url>
-              <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
+              <loc>${YOUR_AWESOME_DOMAIN}/${lang}/${routePath}</loc>
+              ${langList.map((lang2) => `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${lang2}/${routePath}"></xhtml:link>`).join("\n")}
               <lastmod>${getDate}</lastmod>
             </url>
           `;
@@ -112,6 +116,7 @@ const postsSitemapGenerator = async () => {
 };
 
 (async () => {
+  console.log(await pagesSitemapGenerator());
   const generatedSitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset
@@ -121,7 +126,9 @@ const postsSitemapGenerator = async () => {
     >
       ${await pagesSitemapGenerator()}
       ${categoriesSitemapGenerator()}
-			${await postsSitemapGenerator()}
+  		${await postsSitemapGenerator()}
+
+      
     </urlset>
   `;
 
