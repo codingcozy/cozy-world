@@ -37,6 +37,7 @@ export default function Post({ post, content }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+  console.log(post);
   return (
     <>
       {router.isFallback ? (
@@ -95,7 +96,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date"], lang: params.lang });
+  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date"], lang: params.lang });
   // console.log(post);
   // const content = await markdownToHtml(post.content || "");
   const content = await serialize(post.content, {

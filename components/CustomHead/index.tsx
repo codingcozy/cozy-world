@@ -26,6 +26,8 @@ export const CustomHead = ({ type, post, project }: SectoinTitleProps) => {
     return (
       <Head>
         <title>{`${post.title} | ${SITE_NAME}`}</title>
+        <meta name="description" content={post.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Facebook og Tags */}
         <meta property="og:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
@@ -52,6 +54,8 @@ export const CustomHead = ({ type, post, project }: SectoinTitleProps) => {
     return (
       <Head>
         <title>{`${project.title} | ${SITE_NAME}`}</title>
+        <meta name="description" content={project.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Facebook og Tags */}
         <meta property="og:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />
@@ -77,6 +81,7 @@ export const CustomHead = ({ type, post, project }: SectoinTitleProps) => {
       <Head>
         <title>{SITE_NAME}</title>
         <meta name="description" content={SITE_DESCRIPTION[lang]} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Facebook og Tags */}
         <meta property="og:url" content={`${SITE_URL}/${router.asPath}`} data-gatsby-head="true" />

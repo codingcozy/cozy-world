@@ -33,10 +33,6 @@ export default function Project({ project }: Props) {
       ) : (
         <>
           <CustomHead type="project" project={project} />
-          {/* <Head>
-            <title>{title}</title>
-            <meta property="og:image" content={project.ogImage.url} />
-          </Head> */}
           <div className={cx("container")}>
             <Header />
             <div className={cx("inner")}>
