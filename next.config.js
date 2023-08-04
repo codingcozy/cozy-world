@@ -10,6 +10,10 @@ const nextConfig = {
         source: "/",
         destination: "/en",
         permanent: true,
+        i18n: {
+          locales: ["en", "ko", "ja"],
+          defaultLocale: "en",
+        },
       },
     ];
   },
