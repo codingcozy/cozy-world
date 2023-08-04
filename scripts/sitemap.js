@@ -46,7 +46,7 @@ const pagesSitemapGenerator = async () => {
               ${langList
                 .map((lang2) => {
                   if (lang2 !== lang) {
-                    return `<xhtml:link rel="alternate" hreflang="${lang}" href="${YOUR_AWESOME_DOMAIN}/${langpath.replace("[lang]", lang2)}" />`;
+                    return `<xhtml:link rel="alternate" hreflang="${lang2}" href="${YOUR_AWESOME_DOMAIN}/${langpath.replace("[lang]", lang2)}" />`;
                   }
                 })
                 .join("\n")}
