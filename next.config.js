@@ -4,16 +4,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  i18n: {
+    locales: ["en", "ko", "ja"],
+    defaultLocale: "en",
+  },
   async redirects() {
     return [
       {
         source: "/",
         destination: "/en",
         permanent: true,
-        i18n: {
-          locales: ["en", "ko", "ja"],
-          defaultLocale: "en",
-        },
       },
     ];
   },
