@@ -7,7 +7,7 @@ author:
   name: Cozy Coding
 ogImage:
   url: "/assets/posts/Blog/How-to-use-markdown-it/cover.png"
-tag: MDXRemote
+tag: MDXRemote, sitemap
 category: Blog
 ---
 

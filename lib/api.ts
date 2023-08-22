@@ -96,12 +96,13 @@ export function getPostByFile(file: string, fields: string[] = []) {
 
 interface getPostsProps {
   category?: string;
+  tag?: string;
   fields: string[];
   file?: string;
   lang?: string;
 }
 
-export async function getPosts({ category = "**", file = "**", fields = [], lang = "en" }: getPostsProps) {
+export async function getPosts({ category = "**", tag, file = "**", fields = [], lang = "en" }: getPostsProps) {
   // const slugs = getPostSlugs();
   // const posts = slugs
   //   .map((slug) => getPostBySlug(slug, fields))
@@ -109,7 +110,9 @@ export async function getPosts({ category = "**", file = "**", fields = [], lang
   //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   // return posts;
   const files = await globby([`_posts/${category}/${file}/${lang}.md`]);
-  const posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
+  let posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  if (tag) posts = posts.filter((post) => post.tag.includes(tag));
   return posts;
 }
 

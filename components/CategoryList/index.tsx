@@ -12,12 +12,12 @@ interface CategoryListProps {
 
 export const CategoryList = ({ categoryList }: CategoryListProps) => {
   const router = useRouter();
-
+  console.log(router.query);
   return (
     <ul className={cx("category_list")}>
       {categoryList.map((category: string, i: any) => (
         <li className={cx("category_item")} key={i}>
-          <Link className={cx("link")} href={`/${router.query.lang}/posts/${category}`}>
+          <Link className={cx("link")} href={`/${router.query.lang}/posts/${category}`} aria-current={router.query.category === category}>
             <span>{category}</span>
           </Link>
         </li>

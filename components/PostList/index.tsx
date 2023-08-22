@@ -36,7 +36,7 @@ export const PostList = ({ postList }: PostListProps) => {
               <ul className={cx("tag_list")}>
                 {post.tag.map((tag, i) => (
                   <li className={cx("tag_item")} key={i}>
-                    <Link className={cx("tag_link")} href={`/tags/${tag}`}>
+                    <Link className={cx("tag_link")} href={`/${lang}/tags/${tag}`}>
                       <span>#</span>
                       {tag}
                     </Link>
