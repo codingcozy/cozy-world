@@ -1,4 +1,5 @@
 @import "../../../scss/utils";
+@import "../../../scss/import/post_content";
 
 .container {
   padding-top: 60px;
@@ -86,10 +87,32 @@
   }
 
   :global(.youtube) {
+    position: relative;
     display: block;
     aspect-ratio: 16/9;
     width: 600px;
     margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &::before {
+      @include positionAll;
+
+      content: "";
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: no-repeat url("./assets/button_play.png") 0 0 / contain;
+      width: 100px;
+      height: 100px;
+      transform: translate(-50%, -50%);
+    }
 
     img {
       width: 100%;

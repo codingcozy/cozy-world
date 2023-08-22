@@ -13,9 +13,11 @@ ogImage:
 
 ### Youtube Link
 
-<a class="youtube" href="https://www.youtube.com/watch?v=RUlD_toxJv8"><img src="https://img.youtube.com/vi/RUlD_toxJv8/hqdefault.jpg" width="600" height="300"></a>
+<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=RUlD_toxJv8"><img src="https://img.youtube.com/vi/RUlD_toxJv8/hqdefault.jpg" width="600" height="300" /></a>
 
 ### html
+
+<GoogleAd/>
 
 ```html
 <!DOCTYPE html>
@@ -43,6 +45,8 @@ ogImage:
 ```
 
 ### css
+
+<GoogleAd/>
 
 ```css
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
@@ -72,6 +76,8 @@ h1 {
 ```
 
 ### js
+
+<GoogleAd/>
 
 ```js
 const canvas = document.getElementById("canvas");

@@ -14,6 +14,7 @@ type PostType = {
   category: string;
   tag: string[];
   lang: "string";
+  readingTime: number;
 };
 
 export default PostType;

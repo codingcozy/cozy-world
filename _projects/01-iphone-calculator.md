@@ -13,13 +13,11 @@ ogImage:
 
 ## Youtube Link
 
-<a class="youtube" href="https://www.youtube.com/watch?v=Pa5kbjgyWDk"><img src="https://img.youtube.com/vi/Pa5kbjgyWDk/hqdefault.jpg" width="600" height="300"></a>
-
-<!-- <a href=""></a>
-
-[<img src="https://img.youtube.com/vi/Pa5kbjgyWDk/hqdefault.jpg" width="600" height="300"/>](https://www.youtube.com/watch?v=Pa5kbjgyWDk) -->
+<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=Pa5kbjgyWDk"><img src="https://img.youtube.com/vi/Pa5kbjgyWDk/hqdefault.jpg" width="600" height="300" /></a>
 
 ### html
+
+<GoogleAd/>
 
 ```html
 <!DOCTYPE html>

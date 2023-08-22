@@ -77,6 +77,10 @@ export function getPostByFile(file: string, fields: string[] = []) {
       items[field] = content;
     }
 
+    if (field === "readingTime") {
+      items[field] = Math.ceil(content.length / 1000);
+    }
+
     if (field === "tag") {
       items[field] = [...data[field].split(", ")];
       return;

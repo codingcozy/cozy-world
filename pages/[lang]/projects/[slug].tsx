@@ -1,26 +1,34 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { getProjectBySlug, getAllProjects } from "../../../lib/api";
-import Head from "next/head";
 import type ProjectType from "../../../interfaces/project";
 import Header from "@/components/Header";
 import style from "./projects.module.scss";
 import classnames from "classnames/bind";
+import Image from "next/image";
 import markdownIt from "markdown-it";
 import highlightjs from "markdown-it-highlightjs";
 import CustomHead from "@/components/CustomHead";
 import GoogleAd from "@/components/GoogleAd";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import rehypeHighlight from "rehype-highlight";
+import remarkDirective from "remark-directive";
+import { myRemarkPlugin } from "../posts/[category]/[slug]";
+
 const md = markdownIt({ html: true }).use(highlightjs);
 
 const cx = classnames.bind(style);
+const components = { Image, GoogleAd };
 
 type Props = {
   project: ProjectType;
   moreProjects: ProjectType[];
   preview?: boolean;
+  content: any;
 };
 
-export default function Project({ project }: Props) {
+export default function Project({ project, content }: Props) {
   const router = useRouter();
   const title = `${project.title} | Cozy Coder`;
   if (!router.isFallback && !project?.slug) {
@@ -37,7 +45,7 @@ export default function Project({ project }: Props) {
           <div className={cx("container")}>
             <Header />
             <div className={cx("inner")}>
-              <article className="mb-32">
+              <article>
                 <div className={cx("title_area")}>
                   <h2 className={cx("project_title")}>{project.title}</h2>
                   <img
@@ -52,11 +60,9 @@ export default function Project({ project }: Props) {
                   <iframe className={cx("iframe")} src={project.url} width={"200%"} />
                 </div>
                 <GoogleAd></GoogleAd>
-
-                {/* <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: project.content }}></div> */}
-                {/* <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: md.render(project.content) }}></div> */}
-                <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: md.render(project.content) }}></div>
-                {/* {md.render(project.content)} */}
+                <div className={cx("post_content")}>
+                  <MDXRemote {...content} components={components} />
+                </div>
               </article>
             </div>
           </div>
@@ -76,12 +82,19 @@ export async function getStaticProps({ params }: Params) {
   const project = getProjectBySlug(params.slug, ["title", "date", "url", "slug", "author", "content", "ogImage", "coverImage", "description"]);
   // const content = await markdownToHtml(project.content || "");
 
+  const content = await serialize(project.content, {
+    mdxOptions: {
+      rehypePlugins: [rehypeHighlight],
+      remarkPlugins: [remarkDirective, myRemarkPlugin],
+    },
+  });
+
   return {
     props: {
       project: {
         ...project,
-        // content,
       },
+      content,
     },
   };
 }

@@ -13,9 +13,11 @@ ogImage:
 
 ### Youtube Link
 
-<a class="youtube" href="https://www.youtube.com/watch?v=cscrCn-EjHA"><img src="https://img.youtube.com/vi/cscrCn-EjHA/hqdefault.jpg" width="600" height="300"></a>
+<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=cscrCn-EjHA"><img src="https://img.youtube.com/vi/cscrCn-EjHA/hqdefault.jpg" width="600" height="300" /></a>
 
 ### html
+
+<GoogleAd/>
 
 ```html
 <!DOCTYPE html>
@@ -79,6 +81,8 @@ ogImage:
 ```
 
 ### css
+
+<GoogleAd/>
 
 ```css
 body {
@@ -247,6 +251,8 @@ body {
 ```
 
 ### js
+
+<GoogleAd/>
 
 ```js
 function rotateClockHands() {

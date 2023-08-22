@@ -13,9 +13,11 @@ ogImage:
 
 ### Youtube Link
 
-<a class="youtube" href="https://www.youtube.com/watch?v=rq3dTxKnpFc"><img src="https://img.youtube.com/vi/rq3dTxKnpFc/hqdefault.jpg" width="600" height="300"></a>
+<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=rq3dTxKnpFc"><img src="https://img.youtube.com/vi/rq3dTxKnpFc/hqdefault.jpg" width="600" height="300" /></a>
 
 ### html
+
+<GoogleAd/>
 
 ```html
 <!DOCTYPE html>
@@ -36,6 +38,8 @@ ogImage:
 
 ### css
 
+<GoogleAd/>
+
 ```css
 body {
   margin: 0;
@@ -54,6 +58,8 @@ canvas {
 ```
 
 ### js
+
+<GoogleAd/>
 
 ```js
 const canvas = document.getElementById("gameCanvas");

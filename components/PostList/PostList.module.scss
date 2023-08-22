@@ -1,3 +1,5 @@
+@import "../../scss/utils";
+
 .post_list {
   display: flex;
   flex-direction: column;
@@ -7,10 +9,12 @@
 .post_item {
   display: flex;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 6px;
   border: 1px solid #dde4ed;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  min-height: 160px;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  min-height: 150px;
   overflow: hidden;
 }
 
@@ -26,13 +30,23 @@
 }
 
 .text_area {
-  padding: 16px;
+  padding: 16px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
+.link {
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #0a8f9e;
+  }
+}
+
 .title {
+  @include ellipsisMulti(2);
+
   font-size: 24px;
   line-height: 30px;
 }
@@ -57,5 +71,11 @@
 }
 
 .meta {
+  display: flex;
   margin-top: 16px;
+}
+
+.reading_time {
+  margin-left: auto;
+  font-size: 12px;
 }

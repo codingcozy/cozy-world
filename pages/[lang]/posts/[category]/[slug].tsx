@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { getPosts } from "../../../../lib/api";
-import Head from "next/head";
 import markdownToHtml from "../../../../lib/markdownToHtml";
 import type PostType from "../../../../interfaces/post";
 import Header from "@/components/Header";
@@ -19,10 +18,8 @@ import highlightjs from "markdown-it-highlightjs";
 import markdownContainer from "markdown-it-container";
 import { LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
 import CustomHead from "@/components/CustomHead";
-import { useEffect } from "react";
 import GoogleAd from "@/components/GoogleAd";
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
-// const md = markdownIt({ html: true });
 
 const cx = classnames.bind(style);
 const components = { Image, GoogleAd };
@@ -35,25 +32,6 @@ type Props = {
 
 export default function Post({ post, content }: Props) {
   const router = useRouter();
-
-  //   useEffect(() => {
-  //     let contentAd = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
-  //     crossorigin="anonymous"></script>
-  // <ins class="adsbygoogle"
-  //     style="display:block"
-  //     data-ad-client="ca-pub-4877378276818686"
-  //     data-ad-slot="1107185301"
-  //     data-ad-format="auto"
-  //     data-full-width-responsive="true"></ins>
-  // <script>
-  //     (adsbygoogle = window.adsbygoogle || []).push({});
-  // </script>`;
-  //     const adEls = document.getElementsByClassName("content-ad");
-  //     for (let i = 0; i < adEls.length; i++) {
-  //       const adEl = adEls[i];
-  //       adEl.innerHTML = contentAd;
-  //     }
-  //   }, []);
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -73,7 +51,6 @@ export default function Post({ post, content }: Props) {
                 {/* <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div> */}
 
                 <MDXRemote {...content} components={components} />
-                {/* <div dangerouslySetInnerHTML={{ __html: post.content }}></div> */}
               </article>
             </div>
           </main>
@@ -83,7 +60,7 @@ export default function Post({ post, content }: Props) {
   );
 }
 
-function myRemarkPlugin() {
+export function myRemarkPlugin() {
   return (tree: any) => {
     visit(tree, (node) => {
       if (node.type === "textDirective" || node.type === "leafDirective" || node.type === "containerDirective") {

@@ -13,9 +13,11 @@ ogImage:
 
 ### Youtube Link
 
-<a class="youtube" href="https://www.youtube.com/watch?v=rlY9HEleIuw"><img src="https://img.youtube.com/vi/rlY9HEleIuw/hqdefault.jpg" width="600" height="300"></a>
+<a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=rlY9HEleIuw"><img src="https://img.youtube.com/vi/rlY9HEleIuw/hqdefault.jpg" width="600" height="300" /></a>
 
 ### html
+
+<GoogleAd/>
 
 ```html
 <!DOCTYPE html>
@@ -64,6 +66,8 @@ ogImage:
 ```
 
 ### css
+
+<GoogleAd/>
 
 ```css
 body {
