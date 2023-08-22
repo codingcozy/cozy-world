@@ -134,7 +134,6 @@ const postsSitemapGenerator = async () => {
 };
 
 (async () => {
-  console.log(await pagesSitemapGenerator());
   const generatedSitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset 

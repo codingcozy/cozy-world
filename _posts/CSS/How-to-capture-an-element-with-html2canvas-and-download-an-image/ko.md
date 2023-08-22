@@ -23,20 +23,12 @@ html2canvas 라이브러리 가져오기: 먼저 html2canvas 라이브러리를 
 <script src="path/to/html2canvas.min.js"></script>
 ```
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
-     crossorigin="anonymous"></script>
-<!-- cozyworld - 수평 -->
-
 <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="1107185301"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+style={{display:'block'}}
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="1107185301"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
 HTML 요소 캡처 및 이미지 생성 함수 작성: 아래와 같이 JavaScript 코드를 작성하여 특정 HTML 요소를 캡처하고 이미지로 생성하는 함수를 만듭니다.
 
@@ -89,20 +81,12 @@ npm install html2canvas
 
 이 컴포넌트를 다른 리액트 컴포넌트 내부에서 사용하면 됩니다.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
-     crossorigin="anonymous"></script>
-<!-- cozyworld - 수평 -->
-
 <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="1107185301"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+style={{display:'block'}}
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="1107185301"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
 ```jsx
 import React from "react";

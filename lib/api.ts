@@ -105,9 +105,7 @@ export async function getPosts({ category = "**", file = "**", fields = [], lang
   //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   // return posts;
   const files = await globby([`_posts/${category}/${file}/${lang}.md`]);
-  console.log(files);
   const posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  console.log(posts);
   return posts;
 }
 
