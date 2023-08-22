@@ -51,7 +51,9 @@ export default function Project({ project }: Props) {
                   <iframe className={cx("iframe")} src={project.url} width={"200%"} />
                 </div>
 
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686" crossOrigin="anonymous"></script>
                 <ins className="adsbygoogle" style={{ display: "block" }} data-ad-client="ca-pub-4877378276818686" data-ad-slot="1107185301" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                 {/* <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: project.content }}></div> */}
                 {/* <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: md.render(project.content) }}></div> */}
                 <div className={cx("post_content")} dangerouslySetInnerHTML={{ __html: md.render(project.content) }}></div>
