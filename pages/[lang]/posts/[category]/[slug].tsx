@@ -20,6 +20,7 @@ import highlightjs from "markdown-it-highlightjs";
 import markdownContainer from "markdown-it-container";
 import { LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
 import CustomHead from "@/components/CustomHead";
+import { useEffect } from "react";
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 // const md = markdownIt({ html: true });
 
@@ -37,6 +38,16 @@ export default function Post({ post, content }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
+  useEffect(() => {
+    let contentAd = `<ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="1107185301" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+    const adEls = document.getElementsByClassName("content-ad");
+    for (let i = 0; i < adEls.length; i++) {
+      const adEl = adEls[i];
+      adEl.innerHTML = contentAd;
+    }
+  }, []);
+
   return (
     <>
       {router.isFallback ? (

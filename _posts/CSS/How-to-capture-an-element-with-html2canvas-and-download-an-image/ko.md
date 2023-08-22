@@ -39,6 +39,8 @@ HTML 요소 캡처 및 이미지 생성 함수 작성: 아래와 같이 JavaScri
 </script>
 ```
 
+<div className="content-ad"></div>
+
 ## 다운로드 버튼 제작
 
 버튼을 클릭하면 다운로드를 하기위해 버튼을 만들어줍니다.
