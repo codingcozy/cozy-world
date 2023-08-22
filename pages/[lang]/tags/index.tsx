@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import { getPostCategories, getPosts } from "../../../lib/api";
-import Head from "next/head";
 import Header from "@/components/Header";
-import style from "./posts.module.scss";
+import style from "./tags.module.scss";
 import classnames from "classnames/bind";
 import PostList from "@/components/PostList";
 import SectionTitle from "@/components/SectionTitle";

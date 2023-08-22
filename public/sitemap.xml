@@ -18,7 +18,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -34,7 +34,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -50,7 +50,23 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/en/tags</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/tags"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/tags"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -66,7 +82,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -82,7 +98,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -98,7 +114,23 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ko/tags</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/tags"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/tags"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -114,7 +146,7 @@
       href="https://cozy-coder.com/ko"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -130,7 +162,7 @@
       href="https://cozy-coder.com/ko/posts"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -146,7 +178,23 @@
       href="https://cozy-coder.com/ko/projects"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ja/tags</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/tags"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/tags"
+    />
+
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -157,7 +205,7 @@
       href="https://cozy-coder.com/en/posts/Blog"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/en/posts/CSS</loc>
@@ -167,7 +215,7 @@
       href="https://cozy-coder.com/en/posts/CSS"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/en/posts/Nextjs</loc>
@@ -177,7 +225,7 @@
       href="https://cozy-coder.com/en/posts/Nextjs"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ko/posts/Blog</loc>
@@ -188,7 +236,7 @@
       href="https://cozy-coder.com/ko/posts/Blog"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ko/posts/CSS</loc>
@@ -199,7 +247,7 @@
       href="https://cozy-coder.com/ko/posts/CSS"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ko/posts/Nextjs</loc>
@@ -210,7 +258,7 @@
       href="https://cozy-coder.com/ko/posts/Nextjs"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ja/posts/Blog</loc>
@@ -220,7 +268,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ja/posts/CSS</loc>
@@ -230,7 +278,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
   <url>
     <loc>https://cozy-coder.com/ja/posts/Nextjs</loc>
@@ -240,7 +288,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -256,7 +304,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/01-iphone-calculator"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -272,7 +320,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/02-snake-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -288,7 +336,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/03-apple-pay"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -304,7 +352,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/04-dino-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -320,7 +368,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/05-whack-a-mole"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -336,7 +384,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/06-cat-matching-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -352,7 +400,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/07-tetris-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -368,7 +416,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/08-flappy-bird"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -384,7 +432,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/09-instagram-signin"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -400,7 +448,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/10-2048-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -416,7 +464,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/11-pong-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -432,7 +480,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/12-spinning-donut"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -448,7 +496,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/13-othello-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -464,7 +512,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/14-space-simulation"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -480,7 +528,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/15-apple-watch"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -496,7 +544,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/16-tictactoe"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -512,7 +560,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/17-weather-app"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -528,7 +576,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/18-missile-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -544,7 +592,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/19-magic-keyboard"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -560,7 +608,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/20-poop-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -578,7 +626,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -596,7 +644,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -614,7 +662,55 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -632,7 +728,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -650,7 +746,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -668,7 +764,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -686,7 +782,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -704,7 +800,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -722,7 +818,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -740,7 +836,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -758,7 +854,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -776,55 +872,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it</loc>
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -840,7 +888,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/01-iphone-calculator"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -856,7 +904,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/02-snake-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -872,7 +920,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/03-apple-pay"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -888,7 +936,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/04-dino-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -904,7 +952,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/05-whack-a-mole"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -920,7 +968,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/06-cat-matching-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -936,7 +984,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/07-tetris-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -952,7 +1000,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/08-flappy-bird"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -968,7 +1016,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/09-instagram-signin"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -984,7 +1032,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/10-2048-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1000,7 +1048,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/11-pong-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1016,7 +1064,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/12-spinning-donut"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1032,7 +1080,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/13-othello-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1048,7 +1096,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/14-space-simulation"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1064,7 +1112,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/15-apple-watch"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1080,7 +1128,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/16-tictactoe"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1096,7 +1144,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/17-weather-app"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1112,7 +1160,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/18-missile-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1128,7 +1176,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/19-magic-keyboard"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1144,7 +1192,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/projects/20-poop-game"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1162,7 +1210,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1180,7 +1228,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1198,7 +1246,55 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
+    />
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1216,7 +1312,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1234,7 +1330,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1252,7 +1348,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1270,7 +1366,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1288,7 +1384,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1306,7 +1402,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1324,7 +1420,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1342,7 +1438,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1360,55 +1456,7 @@
       hreflang="ja"
       href="https://cozy-coder.com/ja/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it"
-    />
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1424,7 +1472,7 @@
       href="https://cozy-coder.com/ko/projects/01-iphone-calculator"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1440,7 +1488,7 @@
       href="https://cozy-coder.com/ko/projects/02-snake-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1456,7 +1504,7 @@
       href="https://cozy-coder.com/ko/projects/03-apple-pay"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1472,7 +1520,7 @@
       href="https://cozy-coder.com/ko/projects/04-dino-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1488,7 +1536,7 @@
       href="https://cozy-coder.com/ko/projects/05-whack-a-mole"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1504,7 +1552,7 @@
       href="https://cozy-coder.com/ko/projects/06-cat-matching-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1520,7 +1568,7 @@
       href="https://cozy-coder.com/ko/projects/07-tetris-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1536,7 +1584,7 @@
       href="https://cozy-coder.com/ko/projects/08-flappy-bird"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1552,7 +1600,7 @@
       href="https://cozy-coder.com/ko/projects/09-instagram-signin"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1568,7 +1616,7 @@
       href="https://cozy-coder.com/ko/projects/10-2048-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1584,7 +1632,7 @@
       href="https://cozy-coder.com/ko/projects/11-pong-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1600,7 +1648,7 @@
       href="https://cozy-coder.com/ko/projects/12-spinning-donut"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1616,7 +1664,7 @@
       href="https://cozy-coder.com/ko/projects/13-othello-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1632,7 +1680,7 @@
       href="https://cozy-coder.com/ko/projects/14-space-simulation"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1648,7 +1696,7 @@
       href="https://cozy-coder.com/ko/projects/15-apple-watch"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1664,7 +1712,7 @@
       href="https://cozy-coder.com/ko/projects/16-tictactoe"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1680,7 +1728,7 @@
       href="https://cozy-coder.com/ko/projects/17-weather-app"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1696,7 +1744,7 @@
       href="https://cozy-coder.com/ko/projects/18-missile-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1712,7 +1760,7 @@
       href="https://cozy-coder.com/ko/projects/19-magic-keyboard"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1728,7 +1776,7 @@
       href="https://cozy-coder.com/ko/projects/20-poop-game"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1746,7 +1794,7 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1764,7 +1812,7 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1782,7 +1830,55 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-add-adsense-in-nextjs-blog"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ko"
+      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
+    />
+
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1800,7 +1896,7 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1818,7 +1914,7 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1836,7 +1932,7 @@
       href="https://cozy-coder.com/ko/posts/Blog/How-to-generate-sitemap-in-nextjs"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1854,7 +1950,7 @@
       href="https://cozy-coder.com/ko/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1872,7 +1968,7 @@
       href="https://cozy-coder.com/ko/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1890,7 +1986,7 @@
       href="https://cozy-coder.com/ko/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1908,7 +2004,7 @@
       href="https://cozy-coder.com/ko/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1926,7 +2022,7 @@
       href="https://cozy-coder.com/ko/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 
   <url>
@@ -1944,54 +2040,6 @@
       href="https://cozy-coder.com/ko/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide"
     />
 
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/ja/posts/Blog/How-to-use-markdown-it</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://cozy-coder.com/en/posts/Blog/How-to-use-markdown-it"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cozy-coder.com/ko/posts/Blog/How-to-use-markdown-it"
-    />
-
-    <lastmod>2023-08-22T15:46:13.732Z</lastmod>
+    <lastmod>2023-08-22T17:12:02.161Z</lastmod>
   </url>
 </urlset>

@@ -53,6 +53,7 @@ export default function Tag({ posts, tag }: Props) {
 
 type Params = {
   params: {
+    lang: string;
     slug: string;
   };
 };
@@ -76,7 +77,7 @@ export async function getStaticPaths() {
   tags = tags.filter((tag, index) => tags.indexOf(tag) === index);
   console.log(tags);
 
-  let paths = [];
+  let paths: any[] = [];
 
   LANG_LIST.map((lang) => {
     tags.map((tag) => {
