@@ -15,6 +15,8 @@ category: CSS
 
 <Image width="846" height="190"  alt="html2canvas image download" src="/assets/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image/2.gif" />
 
+<GoogleAd/>
+
 html2canvas is a JavaScript library that captures HTML elements from web pages and turns them into images. Here's how to use it to capture and download a specific HTML element as an image.
 
 Import the html2canvas library: First add the html2canvas library to your web page. You can import the library using the `<script>` tag like this: At this time, the path of the library file must be modified according to the web page.
@@ -39,6 +41,7 @@ Write a function to capture HTML elements and create an image: Write the JavaScr
 </script>
 ```
 
+<GoogleAd/>
 ## Create a download button
 
 Clicking the button creates a button to download.

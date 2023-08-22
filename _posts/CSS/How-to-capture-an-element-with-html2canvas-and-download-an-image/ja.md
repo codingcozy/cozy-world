@@ -15,6 +15,8 @@ category: CSS
 
 <Image width="846" height="190"  alt="html2canvas image download" src="/assets/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image/2.gif" />
 
+<GoogleAd/>
+
 HTML2Canvas は、Web ページの HTML 要素をキャプチャし、それらを画像に変える JavaScript ライブラリです。これを使用して、特定の HTML 要素を画像としてキャプチャおよびダウンロードする方法を次に示します。
 
 HTML2Canvas ライブラリをインポート：最初に HTML2Canvas ライブラリを Web ページに追加します。このような `<script> `タグを使用してライブラリをインポートできます。現時点では、ライブラリファイルのパスは Web ページに従って変更する必要があります。
@@ -38,6 +40,8 @@ HTML 要素をキャプチャして画像を作成する関数を記述します
   }
 </script>
 ```
+
+<GoogleAd/>
 
 ## ダウンロードボタンを作成します
 
