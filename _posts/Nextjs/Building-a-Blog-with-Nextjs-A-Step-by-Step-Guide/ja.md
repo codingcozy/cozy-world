@@ -18,6 +18,8 @@ category: Nextjs
 NextJS と Vercel を使用してブログを作成する方法を見てみましょう。
 ワードプレスブログスポットを作成する方法もありますが、開発者として自分自身を作ると、それは良い経験になります。
 
+<GoogleAd/>
+
 ## next.js プロジェクトを作成します
 
 ```bash
@@ -43,6 +45,8 @@ Blog-Starter コードを使用して、不要な部品を削除して使用し�
 <Image width="846" height="1562" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/4.png" />
 
 居心地の良い世界は大部分がブログの投稿やプロジェクトに分割されているため、上記のようにフォルダー構造を持つように変更しました。
+
+<GoogleAd/>
 
 ## scss
 
@@ -94,6 +98,8 @@ export default Header;
 上記のように書かれている場合、クラス名は下の写真に示すように一意に適用されます。
 
 <Image width="846" height="187" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/6.png" />
+
+<GoogleAd/>
 
 ## Deploy
 

@@ -31,6 +31,8 @@ sitemap.xml을 만드는 방법은 Nextjs로 만든 블로그에 있는 페이�
 
 먼저 최종 코드부터 공유하겠습니다.
 
+<GoogleAd/>
+
 ```js
 const fs = require("fs");
 const globby = require("globby");
@@ -210,6 +212,8 @@ const pagesSitemapGenerator = async () => {
 };
 ```
 
+<GoogleAd/>
+
 `pagesSitemapGenerator`는 사이트의 기본적인 페이지들을 sitemap으로 만들어주는 함수입니다. <br/>예를 들어 `/posts`, `/projects` 와 같은 큰 카테고리의 페이지들을 사이트맵으로 만들어줍니다.
 
 `globby` 모듈을 사용해서 pages 내에서 필요한 파일만 가져왔습니다.
@@ -321,6 +325,8 @@ prettier모듈을 통해서 sitemap 파일 포멧팅까지 마쳤습니다.
 ```js
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 ```
+
+<GoogleAd/>
 
 ## 5. 쉘 스크립트 작성
 

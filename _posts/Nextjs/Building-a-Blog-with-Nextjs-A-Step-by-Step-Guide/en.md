@@ -18,6 +18,8 @@ category: Nextjs
 Let's take a look at how to make a blog using NextJS and VERCEL.
 There is also a way to make a word press blog spot, but if you make it yourself as a developer, it will be a good experience.
 
+<GoogleAd/>
+
 ## Create Next.js Project
 
 ```bash
@@ -43,6 +45,8 @@ Use the blog-starter code to remove unnecessary parts and use it.
 <Image width="846" height="1562" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/4.png" />
 
 Because cozy-world is largely divided into blog posts and projects, I modified it to have the folder structure as above.
+
+<GoogleAd/>
 
 ## SCSS
 
@@ -94,6 +98,8 @@ export default Header;
 If written as above, the class name is uniquely applied as shown in the picture below.
 
 <Image width="846" height="187" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/6.png" />
+
+<GoogleAd/>
 
 ## Deploy
 

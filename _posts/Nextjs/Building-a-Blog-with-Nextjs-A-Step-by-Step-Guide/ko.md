@@ -18,6 +18,8 @@ category: Nextjs
 Nextjs와 Vercel을 이용해서 블로그를 만드는 방법에 대해서 알아보겠습니다.
 워드프레스 블로그스팟을 이용해서 만드는 방법도 있지만 개발자로서 직접 만들어보면 좋은 경험이 될 것이니 직접 만들어보도록 하겠습니다.
 
+<GoogleAd/>
+
 ## Next.js Project 생성
 
 ```bash
@@ -43,6 +45,8 @@ blog-starter 코드를 사용해 불필요한 부분을 제거하고 사용합�
 <Image width="846" height="1562" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/4.png" />
 
 cozy-world는 크게 블로그 포스팅과 프로젝트 두 가지로 나뉘기 때문에 위와 같은 폴더 구조를 갖도록 수정했습니다.
+
+<GoogleAd/>
 
 ## SCSS
 
@@ -94,6 +98,8 @@ export default Header;
 위와 같이 작성하면 아래 사진처럼 클래스명이 유니크하게 적용됩니다.
 
 <Image width="846" height="187" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/6.png" />
+
+<GoogleAd/>
 
 ## Deploy
 

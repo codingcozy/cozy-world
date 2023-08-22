@@ -17,6 +17,8 @@ category: Blog
 오늘은 markdown-it로 마크다운을 html로 변환하고 커스텀하는 방법에 대해서 공유하려고 합니다.
 :::
 
+<GoogleAd/>
+
 이전 글에서 vercel의 blog-starter로 블로그를 만들었는데, 이 보일러 플레이트에서 마크다운을 작성하면 아래와 같이 이쁘지 않게 작성되는데요.
 
 <Image width="1533" height="830" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/1.png" />
@@ -39,6 +41,8 @@ export default function Post({ post }: Props) {
   return <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div>;
 }
 ```
+
+<GoogleAd/>
 
 ## highlightjs 설정
 
@@ -257,6 +261,8 @@ code.hljs {
   font-style: italic;
 }
 ```
+
+<GoogleAd/>
 
 ## 커스텀 컨테이터 추가
 

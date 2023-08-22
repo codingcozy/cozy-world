@@ -17,6 +17,8 @@ category: Blog
 Today, I would like to share how to convert and customize markdown to html with markdown-it.
 :::
 
+<GoogleAd/>
+
 In the previous article, I created a blog with Vercel's Blog-STARTER, and when I write a markdown in this boiler plate, it is not as pretty as below.
 
 <Image width="1533" height="830" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/1.png" />
@@ -39,6 +41,8 @@ export default function Post({ post }: Props) {
   return <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div>;
 }
 ```
+
+<GoogleAd/>
 
 ## HighlightJS settings
 
@@ -257,6 +261,8 @@ code.hljs {
   font-style: italic;
 }
 ```
+
+<GoogleAd/>
 
 ## Add Custom Contents
 

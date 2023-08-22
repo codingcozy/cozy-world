@@ -19,7 +19,7 @@ category: Blog
 
 <Image width="1265" height="519" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-generate-sitemap-in-nextjs/1.png" />
 
-## script 작성
+## スクリプトを作成します
 
 sitemap.xml は、次の形式で構成されています。
 
@@ -30,6 +30,8 @@ SiteMap.xml を作成する方法は、SiteMap 形式で NextJS で作成され�
 スクリプトを使用して SiteMap.xml を簡単に作成しましょう。
 
 まず、最終コードを共有します。
+
+<GoogleAd/>
 
 ```js
 const fs = require("fs");
@@ -210,6 +212,8 @@ const pagesSitemapGenerator = async () => {
 };
 ```
 
+<GoogleAd/>
+
 `PagesItemapGenerator`は、サイトの基本ページをサイトマップにする関数です。<br/>たとえば、`/posts`や`/projects`などの大規模なカテゴリのサイトマップを作成します。
 
 `Globby`モジュールを使用して、必要なファイルのみをページに表示しました。
@@ -322,7 +326,9 @@ const pagesSitemapGenerator = async () => {
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 ```
 
-## 5. 쉘 스크립트 작성
+<GoogleAd/>
+
+## 5. シェルスクリプトを作成します
 
 ```shell
 # generate-sitemap.sh

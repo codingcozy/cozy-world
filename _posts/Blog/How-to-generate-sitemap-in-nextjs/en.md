@@ -30,6 +30,8 @@ So, let's easily create sitemap.xml using a script.
 
 First, I will share the final code.
 
+<GoogleAd/>
+
 ```js
 const fs = require("fs");
 const globby = require("globby");
@@ -209,6 +211,8 @@ const pagesSitemapGenerator = async () => {
 };
 ```
 
+<GoogleAd/>
+
 `pagesSitemapGenerator` is a function that converts the basic pages of a site into a sitemap. <br/>For example, pages in large categories such as `/posts` and `/projects` are made into sitemaps.
 
 We used the `globby` module to import only the files we needed within pages.
@@ -320,6 +324,8 @@ We have finished formatting the sitemap file through the prettier module.
 ```js
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 ```
+
+<GoogleAd/>
 
 ## 5. Write a shell script
 

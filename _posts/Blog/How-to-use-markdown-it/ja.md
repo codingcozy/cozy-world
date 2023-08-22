@@ -17,6 +17,8 @@ category: Blog
 今日は、Markdown を HTML に変換し、Markdown-IT でカスタマイズする方法を共有します。
 :::
 
+<GoogleAd/>
+
 前の記事では、Vercel のブログスターターでブログを作成しました。
 
 <Image width="1533" height="830" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Blog/How-to-use-markdown-it/1.png" />
@@ -39,6 +41,8 @@ export default function Post({ post }: Props) {
   return <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div>;
 }
 ```
+
+<GoogleAd/>
 
 ## HighlightJS 設定
 
@@ -258,7 +262,8 @@ code.hljs {
 }
 ```
 
-## 커스텀 컨테이터 추가
+<GoogleAd/>
+## カスタムコンテンツを追加します
 
 Markdown-IT のプラグインの中には、カスタムコンテナを追加するプラグインがあります。
 
