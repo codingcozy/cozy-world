@@ -37,7 +37,17 @@ export default function Post({ post, content }: Props) {
   const router = useRouter();
 
   useEffect(() => {
-    let contentAd = `<ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="1107185301" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+    let contentAd = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
+    crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-4877378276818686"
+    data-ad-slot="1107185301"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`;
     const adEls = document.getElementsByClassName("content-ad");
     for (let i = 0; i < adEls.length; i++) {
       const adEl = adEls[i];
