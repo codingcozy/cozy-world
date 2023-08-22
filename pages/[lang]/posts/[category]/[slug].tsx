@@ -13,7 +13,6 @@ import { MDXRemote } from "next-mdx-remote";
 import rehypeHighlight from "rehype-highlight";
 import remarkDirective from "remark-directive";
 import { visit } from "unist-util-visit";
-import { h } from "hastscript";
 
 import markdownIt from "markdown-it";
 import highlightjs from "markdown-it-highlightjs";
