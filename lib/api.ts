@@ -57,7 +57,6 @@ export function getPostByFile(file: string, fields: string[] = []) {
   const realSlug = fileName.replace(/\.md$/, "");
   const fileContents = fs.readFileSync(file, "utf8");
   const { data, content } = matter(fileContents);
-
   type Items = {
     [key: string]: any;
   };
@@ -106,8 +105,9 @@ export async function getPosts({ category = "**", file = "**", fields = [], lang
   //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   // return posts;
   const files = await globby([`_posts/${category}/${file}/${lang}.md`]);
+  console.log(files);
   const posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-
+  console.log(posts);
   return posts;
 }
 

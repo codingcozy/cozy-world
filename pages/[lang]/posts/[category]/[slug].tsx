@@ -96,6 +96,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
+  console.log(params);
   const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date"], lang: params.lang });
   // console.log(post);
   // const content = await markdownToHtml(post.content || "");
@@ -117,7 +118,7 @@ export async function getStaticProps({ params }: Params) {
 
 export async function getStaticPaths() {
   const posts = await getPosts({ fields: ["slug", "category", "lang"] });
-
+  console.log(posts);
   let paths = [];
   for (let i in posts) {
     const post = posts[i];

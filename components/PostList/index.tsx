@@ -25,9 +25,9 @@ export const PostList = ({ postList }: PostListProps) => {
       {postList.map((post, i) => {
         return (
           <div className={cx("post_item")} key={i}>
-            <Link className={cx("thumbnail_wrap")} href={`/${lang}/posts/${post.category}/${post.slug}`} aria-label={post.title}>
+            {/* <Link className={cx("thumbnail_wrap")} href={`/${lang}/posts/${post.category}/${post.slug}`} aria-label={post.title}>
               <Image src={post.coverImage} className={cx("thumbnail")} alt={post.title} width={100} height={100} />
-            </Link>
+            </Link> */}
             <div className={cx("text_area")}>
               <Link href={`/${lang}/posts/${post.category}/${post.slug}`}>
                 <strong className={cx("title")}>{post.title}</strong>

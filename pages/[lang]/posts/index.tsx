@@ -60,7 +60,6 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"], lang: params.lang });
   const categories = await getPostCategories();
-
   return {
     props: {
       posts: allPosts,
