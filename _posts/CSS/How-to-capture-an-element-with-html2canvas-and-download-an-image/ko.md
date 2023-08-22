@@ -15,6 +15,8 @@ category: CSS
 
 <Image width="846" height="190"  alt="html2canvas image download" src="/assets/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image/2.gif" />
 
+<GoogleAd/>
+
 html2canvas는 JavaScript 라이브러리로, 웹 페이지의 HTML 요소를 캡처하여 이미지로 만들어 줍니다. 이를 사용하여 특정 HTML 요소를 이미지로 캡처하고 다운로드 받는 방법은 다음과 같습니다.
 
 html2canvas 라이브러리 가져오기: 먼저 html2canvas 라이브러리를 웹 페이지에 추가합니다. 다음과 같이 `<script>` 태그를 사용하여 라이브러리를 가져올 수 있습니다. 이때, 라이브러리 파일의 경로는 웹 페이지에 맞게 수정해야 합니다.
@@ -38,8 +40,6 @@ HTML 요소 캡처 및 이미지 생성 함수 작성: 아래와 같이 JavaScri
   }
 </script>
 ```
-
-<div className="content-ad"></div>
 
 ## 다운로드 버튼 제작
 

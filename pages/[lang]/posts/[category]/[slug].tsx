@@ -21,11 +21,12 @@ import markdownContainer from "markdown-it-container";
 import { LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
 import CustomHead from "@/components/CustomHead";
 import { useEffect } from "react";
+import GoogleAd from "@/components/GoogleAd";
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 // const md = markdownIt({ html: true });
 
 const cx = classnames.bind(style);
-const components = { Image };
+const components = { Image, GoogleAd };
 type Props = {
   post: PostType;
   morePosts: PostType[];
@@ -36,24 +37,24 @@ type Props = {
 export default function Post({ post, content }: Props) {
   const router = useRouter();
 
-  useEffect(() => {
-    let contentAd = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
-    crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4877378276818686"
-    data-ad-slot="1107185301"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>`;
-    const adEls = document.getElementsByClassName("content-ad");
-    for (let i = 0; i < adEls.length; i++) {
-      const adEl = adEls[i];
-      adEl.innerHTML = contentAd;
-    }
-  }, []);
+  //   useEffect(() => {
+  //     let contentAd = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686"
+  //     crossorigin="anonymous"></script>
+  // <ins class="adsbygoogle"
+  //     style="display:block"
+  //     data-ad-client="ca-pub-4877378276818686"
+  //     data-ad-slot="1107185301"
+  //     data-ad-format="auto"
+  //     data-full-width-responsive="true"></ins>
+  // <script>
+  //     (adsbygoogle = window.adsbygoogle || []).push({});
+  // </script>`;
+  //     const adEls = document.getElementsByClassName("content-ad");
+  //     for (let i = 0; i < adEls.length; i++) {
+  //       const adEl = adEls[i];
+  //       adEl.innerHTML = contentAd;
+  //     }
+  //   }, []);
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
