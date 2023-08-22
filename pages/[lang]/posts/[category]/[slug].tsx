@@ -35,9 +35,6 @@ type Props = {
 
 export default function Post({ post, content }: Props) {
   const router = useRouter();
-  if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />;
-  }
 
   useEffect(() => {
     let contentAd = `<ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="1107185301" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
@@ -47,6 +44,10 @@ export default function Post({ post, content }: Props) {
       adEl.innerHTML = contentAd;
     }
   }, []);
+
+  if (!router.isFallback && !post?.slug) {
+    return <ErrorPage statusCode={404} />;
+  }
 
   return (
     <>
