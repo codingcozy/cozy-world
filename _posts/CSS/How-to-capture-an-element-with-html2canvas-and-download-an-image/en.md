@@ -7,7 +7,7 @@ author:
   name: Cozy Coding
 ogImage:
   url: "/assets/posts/Blog/How-to-generate-sitemap-in-nextjs/cover.png"
-tag: sitemap
+tag: html2canvas
 category: CSS
 ---
 
