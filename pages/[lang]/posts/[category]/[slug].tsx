@@ -95,7 +95,8 @@ type Params = {
 
 export async function getStaticProps({ params }: Params) {
   const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date"], lang: params.lang });
-  console.log(post.content);
+  console.log(post.title);
+  // console.log(post.content);
   // const content = await markdownToHtml(post.content || "");
   const content = await serialize(post.content, {
     mdxOptions: {
@@ -118,25 +119,10 @@ export async function getStaticPaths() {
   let paths = [];
   for (let i in posts) {
     const post = posts[i];
-    paths.push({
-      params: {
-        lang: "ko",
-        category: post.category,
-        slug: post.slug,
-      },
-    });
 
     paths.push({
       params: {
-        lang: "en",
-        category: post.category,
-        slug: post.slug,
-      },
-    });
-
-    paths.push({
-      params: {
-        lang: "ja",
+        lang: post.lang,
         category: post.category,
         slug: post.slug,
       },

@@ -22,7 +22,9 @@ export const PostList = ({ postList }: PostListProps) => {
   return (
     <div className={cx("post_list")}>
       {postList.map((post, i) => {
-        const date = String(moment(post.date, "YYYYMMDD").fromNow()).includes("hours") ? moment(post.date, "YYYYMMDD").fromNow() : moment(post.date).format("MMM D");
+        console.log(post.title, moment(post.date, "YYYYMMDD-HH:mm:ss").fromNow());
+        const fromNow = moment(post.date, "YYYYMMDD-HH:mm:ss").fromNow();
+        const date = String(fromNow).includes("hours") ? fromNow : moment(post.date).format("MMM D");
         return (
           <div className={cx("post_item")} key={i}>
             {/* <Link className={cx("thumbnail_wrap")} href={`/${lang}/posts/${post.category}/${post.slug}`} aria-label={post.title}>

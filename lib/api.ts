@@ -102,16 +102,17 @@ interface getPostsProps {
   lang?: string;
 }
 
-export async function getPosts({ category = "**", tag, file = "**", fields = [], lang = "en" }: getPostsProps) {
+export async function getPosts({ category = "**", tag, file = "**", fields = [], lang }: getPostsProps) {
   // const slugs = getPostSlugs();
   // const posts = slugs
   //   .map((slug) => getPostBySlug(slug, fields))
   //   // sort posts by date in descending order
   //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   // return posts;
-  const files = await globby([`_posts/${category}/${file}/${lang}.md`]);
-
+  const files = await globby([`_posts/${category}/${file}/${lang ? lang : "*"}.md`]);
+  // console.log(files);
   let posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  console.log(posts);
   if (tag) posts = posts.filter((post) => post.tag.includes(tag));
   return posts;
 }
