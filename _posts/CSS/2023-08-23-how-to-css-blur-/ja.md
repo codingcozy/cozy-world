@@ -11,8 +11,6 @@ tag: blur, filter, backdrop-filter
 category: CSS
 ---
 
-# CSS でぼやけする方法（フィルター、バックドロップフィルター）
-
 :::tip
 CSS を使用して画像をぼかしたり、背景をぼんやりとぼんやりとしたりする方法を学びます。
 :::

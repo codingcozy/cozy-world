@@ -11,8 +11,6 @@ tag: contenteditable
 category: Html
 ---
 
-# 수정가능한 요소를 만드는 가장 쉬운 방법(contenteditable)
-
 :::tip
 간단한 방법으로 수정가능한 요소를 만들 수 있습니다.
 :::

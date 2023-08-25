@@ -11,8 +11,6 @@ tag: html2canvas
 category: CSS
 ---
 
-# How to capture an element with html2canvas and download an image
-
 <Image width="846" height="190"  alt="html2canvas image download" src="/assets/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image/2.gif" />
 
 <GoogleAd/>

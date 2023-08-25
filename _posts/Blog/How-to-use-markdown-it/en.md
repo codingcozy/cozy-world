@@ -11,8 +11,6 @@ tag: markdown-it
 category: Blog
 ---
 
-# How to use markdown-it
-
 :::tip
 Today, I would like to share how to convert and customize markdown to html with markdown-it.
 :::

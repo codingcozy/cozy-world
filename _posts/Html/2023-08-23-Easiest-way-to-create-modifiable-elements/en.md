@@ -11,8 +11,6 @@ tag: contenteditable
 category: Html
 ---
 
-# Easiest way to create modifiable elements
-
 :::tip
 You can create modifiable elements in a simple way.
 :::

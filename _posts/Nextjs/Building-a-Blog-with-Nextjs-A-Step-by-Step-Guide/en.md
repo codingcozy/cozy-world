@@ -11,8 +11,6 @@ tag: Nextjs
 category: Nextjs
 ---
 
-# Building a Blog with Next.js: A Step-by-Step Guide
-
 <Image width="846" height="458" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/1.png" />
 
 Let's take a look at how to make a blog using NextJS and VERCEL.

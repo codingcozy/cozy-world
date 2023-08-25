@@ -11,8 +11,6 @@ tag: markdown-it
 category: Blog
 ---
 
-# markdown-it 사용해서 markdown을 html로 변환하기
-
 :::tip
 오늘은 markdown-it로 마크다운을 html로 변환하고 커스텀하는 방법에 대해서 공유하려고 합니다.
 :::

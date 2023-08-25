@@ -11,8 +11,6 @@ tag: sitemap
 category: Blog
 ---
 
-# How to create a sitemap file in Nextjs
-
 :::tip
 💡 We share how to create sitemap.xml so Google crawler can check your site.
 :::

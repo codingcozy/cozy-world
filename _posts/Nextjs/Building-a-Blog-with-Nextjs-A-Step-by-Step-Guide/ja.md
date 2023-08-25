@@ -11,8 +11,6 @@ tag: Nextjs
 category: Nextjs
 ---
 
-# next.js でブログを構築する：ステップバイステップガイド
-
 <Image width="846" height="458" alt="250466992-88684525-bfce-4688-bb1e-8404cdd5fc0c" src="/assets/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide/1.png" />
 
 NextJS と Vercel を使用してブログを作成する方法を見てみましょう。

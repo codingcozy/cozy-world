@@ -11,8 +11,6 @@ tag: MDXRemote
 category: Blog
 ---
 
-# AdSense を NextJS ブログ Markdown に適用します
-
 <Image width="1515" height="771"  alt="nextjs blog adsense" src="/assets/posts/Blog/How-to-add-adsense-in-nextjs-blog/2.png" />
 
 :::tip

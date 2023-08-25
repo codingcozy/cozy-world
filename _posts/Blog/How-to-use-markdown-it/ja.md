@@ -11,8 +11,6 @@ tag: markdown-it
 category: Blog
 ---
 
-# MarkDown-IT を使用して、MarkDown を HTML に変換します
-
 :::tip
 今日は、Markdown を HTML に変換し、Markdown-IT でカスタマイズする方法を共有します。
 :::

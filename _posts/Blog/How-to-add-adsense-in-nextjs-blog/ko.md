@@ -11,8 +11,6 @@ tag: MDXRemote
 category: Blog
 ---
 
-# Nextjs 블로그 마크다운에 애드센스 적용하기
-
 <Image width="1515" height="771"  alt="nextjs blog adsense" src="/assets/posts/Blog/How-to-add-adsense-in-nextjs-blog/2.png" />
 
 :::tip

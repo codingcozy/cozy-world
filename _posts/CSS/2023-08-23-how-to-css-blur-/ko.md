@@ -11,8 +11,6 @@ tag: blur, filter, backdrop-filter
 category: CSS
 ---
 
-# css로 Blur처리를 하는 방법(filter, backdrop-filter)
-
 :::tip
 css를 이용해서 이미지를 블러처리하거나 배경을 블러처리하는 방법에 대해서 알아봅니다.
 :::
@@ -75,6 +73,8 @@ css를 이용해서 이미지를 블러처리하거나 배경을 블러처리하
 </html>
 ```
 
+<GoogleAd/>
+
 <Image width="542" height="300"  alt="css filter" src="https://github.com/codingcozy/cozy-world/assets/46010705/397d6db7-dafc-4325-91e1-016e8a4ab124"/>
 
 위와 같이 작성하면 filter를 사용할 수 있습니다.
@@ -89,6 +89,7 @@ filter 속성은 ie11을 제외한 곳에서는 사용 가능하기 때문에 IE
 
 [caniuse](https://caniuse.com/?search=filter)
 
+<GoogleAd/>
 ## backdrop-filter
 
 블러처리를 하는데 이미지 블러처리가 아닌 배경을 블러처리하고 싶은 경우가 있을 수 있는데요.
@@ -138,6 +139,8 @@ filter 속성은 ie11을 제외한 곳에서는 사용 가능하기 때문에 IE
   </body>
 </html>
 ```
+
+<GoogleAd/>
 
 ### 지원 범위
 

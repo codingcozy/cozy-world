@@ -11,8 +11,6 @@ tag: sitemap
 category: Blog
 ---
 
-# NextJS でサイトマップファイルを作成する方法
-
 :::tip
 💡 Google Crawler がサイトを確認できるように、SiteMap.xml を作成する方法を共有します。
 :::

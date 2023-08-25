@@ -11,8 +11,6 @@ tag: blur, filter, backdrop-filter
 category: CSS
 ---
 
-# How to blur with css (filter, backdrop-filter)
-
 :::tip
 Learn how to blur an image or blur a background using css.
 :::
