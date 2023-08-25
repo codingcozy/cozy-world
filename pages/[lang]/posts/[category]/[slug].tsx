@@ -58,8 +58,8 @@ export default function Post({ post, content }: Props) {
               </div>
               <h1 className={cx("post_title")}>{post.title}</h1>
               <ul className={cx("tag_area")}>
-                {post.tag.map((text) => (
-                  <Link href={`/${router.query.lang}/tags/${text}`} className={cx("tag")}>
+                {post.tag.map((text, i) => (
+                  <Link key={i} href={`/${router.query.lang}/tags/${text}`} className={cx("tag")}>
                     #{text}
                   </Link>
                 ))}
