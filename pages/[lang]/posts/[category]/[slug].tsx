@@ -50,7 +50,7 @@ export default function Post({ post, content }: Props) {
             <div className={cx("inner")}>
               <div className={cx("meta")}>
                 <span className={cx("date")}>Posted on {moment(post.date).format("MMM D")}</span>
-                <img
+                <Image
                   className={cx("view_badge")}
                   src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcozy-world.vercel.app${router.asPath}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false`}
                   alt=""

@@ -48,7 +48,7 @@ export default function Project({ project, content }: Props) {
               <article>
                 <div className={cx("title_area")}>
                   <h2 className={cx("project_title")}>{project.title}</h2>
-                  <img
+                  <Image
                     className={cx("view_badge")}
                     src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcozy-world.vercel.app${router.asPath}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false`}
                     alt=""
