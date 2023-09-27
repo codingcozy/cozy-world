@@ -20,6 +20,8 @@ import CustomHead from "@/components/CustomHead";
 import GoogleAd from "@/components/GoogleAd";
 import moment from "moment";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 
 const cx = classnames.bind(style);
@@ -37,7 +39,7 @@ export default function Post({ post, content }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  console.log(post);
+
   return (
     <>
       {router.isFallback ? (
@@ -49,8 +51,10 @@ export default function Post({ post, content }: Props) {
           <main className={cx("container")}>
             <div className={cx("inner")}>
               <div className={cx("meta")}>
-                <span className={cx("date")}>Posted on {moment(post.date).format("MMM D")}</span>
+                <span className={cx("date")}>{`Posted On ${moment(post.date).format("MMM D")}`}</span>
                 <Image
+                  width={"50"}
+                  height={"50"}
                   className={cx("view_badge")}
                   src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcozy-world.vercel.app${router.asPath}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false`}
                   alt=""
