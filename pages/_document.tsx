@@ -27,6 +27,19 @@ export default function Document() {
           }}
         ></script>
         <Script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686`} strategy="lazyOnload" crossOrigin="anonymous" />
+        <script
+          async
+          data-name="BMC-Widget"
+          data-cfasync="false"
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          data-id="cozycoder"
+          data-description="Support me on Buy me a coffee!"
+          data-message=""
+          data-color="#FF813F"
+          data-position="Right"
+          data-x_margin="18"
+          data-y_margin="18"
+        ></script>
       </Head>
       <body>
         <Main />
