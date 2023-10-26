@@ -3,8 +3,6 @@ const globby = require("globby");
 const path = require("path");
 const prettier = require("prettier");
 
-const getDate = new Date().toISOString();
-
 const YOUR_AWESOME_DOMAIN = "https://cozy-coder.com";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
@@ -83,8 +81,6 @@ const postsSitemapGenerator = async () => {
       return `
     <url>
       <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
-     
-      <lastmod>${getDate}</lastmod>
     </url>
   `;
     })
