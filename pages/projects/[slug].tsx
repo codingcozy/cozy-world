@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { getProjectBySlug, getAllProjects } from "../../../lib/api";
-import type ProjectType from "../../../interfaces/project";
+import { getProjectBySlug, getAllProjects } from "@/lib/api";
+import type ProjectType from "@/interfaces/project";
 import Header from "@/components/Header";
 import style from "./projects.module.scss";
 import classnames from "classnames/bind";
@@ -104,25 +104,11 @@ export async function getStaticProps({ params }: Params) {
 export async function getStaticPaths() {
   const projects = getAllProjects(["slug"]);
   let paths = [];
+
   for (let i in projects) {
     const project = projects[i];
     paths.push({
       params: {
-        lang: "ko",
-        slug: project.slug,
-      },
-    });
-
-    paths.push({
-      params: {
-        lang: "en",
-        slug: project.slug,
-      },
-    });
-
-    paths.push({
-      params: {
-        lang: "ja",
         slug: project.slug,
       },
     });

@@ -13,7 +13,6 @@ type PostType = {
   content: string;
   category: string;
   tag: string[];
-  lang: "string";
   readingTime: number;
 };
 

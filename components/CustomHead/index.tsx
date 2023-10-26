@@ -18,9 +18,6 @@ interface SectoinTitleProps {
 export const CustomHead = ({ type, post, project }: SectoinTitleProps) => {
   const router = useRouter();
   let lang: string = "en";
-  if (router.query.lang && typeof router.query.lang === "string") {
-    lang = router.query.lang;
-  }
 
   if (type === "post" && post) {
     return (

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { getPostCategories, getPosts } from "../../../lib/api";
+import { getPostCategories, getPosts } from "@/lib/api";
 import Head from "next/head";
 import Header from "@/components/Header";
 import style from "./posts.module.scss";
@@ -8,7 +8,6 @@ import PostList from "@/components/PostList";
 import SectionTitle from "@/components/SectionTitle";
 import PostType from "@/interfaces/post";
 import CategoryList from "@/components/CategoryList";
-import { LANG_LIST } from "@/lib/constants";
 import CustomHead from "@/components/CustomHead";
 
 const cx = classnames.bind(style);
@@ -51,29 +50,13 @@ export default function Post({ posts, categories }: Props) {
   );
 }
 
-type Params = {
-  params: {
-    lang: string;
-  };
-};
-
-export async function getStaticProps({ params }: Params) {
-  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"], lang: params.lang });
+export async function getStaticProps() {
+  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"] });
   const categories = await getPostCategories();
   return {
     props: {
       posts: allPosts,
       categories: categories,
     },
-  };
-}
-export async function getStaticPaths() {
-  return {
-    paths: LANG_LIST.map((lang) => ({
-      params: {
-        lang,
-      },
-    })),
-    fallback: false,
   };
 }

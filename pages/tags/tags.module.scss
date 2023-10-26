@@ -1,5 +1,5 @@
-@import "../../../scss/utils";
-@import "../../../scss/import/post_content";
+@import "@/scss/utils";
+@import "@/scss/import/post_content";
 
 .container {
   padding: 80px 20px;
@@ -38,38 +38,4 @@
   transform: translateX(-50%) scale(0.5);
   top: -50%;
   border: 0;
-}
-
-.meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-
-  .date {
-    color: #777;
-  }
-}
-
-.post_title {
-  font-size: 35px;
-  margin-top: 10px;
-}
-
-.tag_area {
-  display: flex;
-  column-gap: 6px;
-  padding: 15px 0 20px;
-  font-size: 16px;
-}
-
-.tag {
-  padding: 6px 10px;
-  border: 1px solid #ddd;
-  border-radius: 100px;
-}
-
-.view_badge {
-  width: auto;
-  height: auto;
 }

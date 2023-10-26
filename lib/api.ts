@@ -51,9 +51,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
 export function getPostByFile(file: string, fields: string[] = []) {
   let fileNameText: any = file.split("/");
-  const lang = fileNameText[fileNameText.length - 1].replace(/\.md$/, "");
-
-  let fileName = fileNameText[fileNameText.length - 2];
+  let fileName = fileNameText[fileNameText.length - 1];
   const realSlug = fileName.replace(/\.md$/, "");
   const fileContents = fs.readFileSync(file, "utf8");
   const { data, content } = matter(fileContents);
@@ -67,10 +65,6 @@ export function getPostByFile(file: string, fields: string[] = []) {
   fields.forEach((field) => {
     if (field === "slug") {
       items[field] = realSlug;
-    }
-
-    if (field === "lang") {
-      items[field] = lang;
     }
 
     if (field === "content") {
@@ -99,20 +93,19 @@ interface getPostsProps {
   tag?: string;
   fields: string[];
   file?: string;
-  lang?: string;
 }
 
-export async function getPosts({ category = "**", tag, file = "**", fields = [], lang }: getPostsProps) {
+export async function getPosts({ category = "**", tag, file = "**", fields = [] }: getPostsProps) {
   // const slugs = getPostSlugs();
   // const posts = slugs
   //   .map((slug) => getPostBySlug(slug, fields))
   //   // sort posts by date in descending order
   //   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   // return posts;
-  const files = await globby([`_posts/${category}/${file}/${lang ? lang : "*"}.md`]);
+  const files = await globby([`_posts/${category}/${file}.md`]);
   // console.log(files);
   let posts = files.map((file) => getPostByFile(file, fields)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  console.log(posts);
+  // console.log(posts);
   if (tag) posts = posts.filter((post) => post.tag.includes(tag));
   return posts;
 }

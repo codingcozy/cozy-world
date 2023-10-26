@@ -4,7 +4,6 @@ import classnames from "classnames/bind";
 import Image from "next/image";
 import Link from "next/link";
 import Project from "@/interfaces/project";
-import { useRouter } from "next/router";
 
 const cx = classnames.bind(style);
 interface ProjectItemProps {
@@ -12,10 +11,8 @@ interface ProjectItemProps {
 }
 
 const ProjectItem = ({ project }: ProjectItemProps) => {
-  const router = useRouter();
-
   return (
-    <Link href={`/${router.query.lang}/projects/${project.slug}`} className={cx("project_card")}>
+    <Link href={`/projects/${project.slug}`} className={cx("project_card")}>
       {/* <a href={project.url} className={cx("project_card")}> */}
       <div className={cx("thumbnail_wrap")}>
         <Image src={project.coverImage} alt="" className={cx("thumbnail")} width={100} height={100}></Image>

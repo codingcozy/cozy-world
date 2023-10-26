@@ -1,26 +1,24 @@
 import { useRouter } from "next/router";
-import Head from "next/head";
+import { getPostCategories, getPosts } from "../../lib/api";
 import Header from "@/components/Header";
-import style from "../posts.module.scss";
+import style from "./tags.module.scss";
 import classnames from "classnames/bind";
 import PostList from "@/components/PostList";
 import SectionTitle from "@/components/SectionTitle";
 import PostType from "@/interfaces/post";
-import { getPosts, getPostCategories } from "@/lib/api";
-import CustomHead from "@/components/CustomHead";
 import CategoryList from "@/components/CategoryList";
+import CustomHead from "@/components/CustomHead";
 
 const cx = classnames.bind(style);
 
 type Props = {
   posts: PostType[];
   categories: string[];
-  category: string;
   morePosts: PostType[];
   preview?: boolean;
 };
 
-export default function Post({ posts, categories, category }: Props) {
+export default function Tag({ posts, categories }: Props) {
   const router = useRouter();
   const title = `Cozy Coder | Post`;
   // if (!router.isFallback && !project?.slug) {
@@ -36,7 +34,7 @@ export default function Post({ posts, categories, category }: Props) {
           <div className={cx("container", "-list")}>
             <Header />
             <div className={cx("inner")}>
-              <article className="mb-32">
+              <article>
                 <SectionTitle title="Posts"></SectionTitle>
                 <CategoryList categoryList={categories}></CategoryList>
                 <div className={cx("project_list")}>
@@ -51,55 +49,13 @@ export default function Post({ posts, categories, category }: Props) {
   );
 }
 
-type Params = {
-  params: {
-    lang: string;
-    category: string;
-  };
-};
-
-export async function getStaticProps({ params }: Params) {
-  const allPosts = await getPosts({ category: params.category, fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"], lang: params.lang });
+export async function getStaticProps() {
+  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"] });
   const categories = await getPostCategories();
-
   return {
     props: {
       posts: allPosts,
-      category: params.category,
-      categories,
+      categories: categories,
     },
-  };
-}
-
-export async function getStaticPaths() {
-  const categories = await getPostCategories();
-  let paths = [];
-  for (let i in categories) {
-    const category = categories[i];
-    paths.push({
-      params: {
-        lang: "ko",
-        category,
-      },
-    });
-
-    paths.push({
-      params: {
-        lang: "en",
-        category,
-      },
-    });
-
-    paths.push({
-      params: {
-        lang: "ja",
-        category,
-      },
-    });
-  }
-
-  return {
-    paths,
-    fallback: false,
   };
 }

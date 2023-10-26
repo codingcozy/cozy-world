@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { getPosts } from "../../../../lib/api";
-import type PostType from "../../../../interfaces/post";
+import { getPosts } from "@/lib/api";
+import type PostType from "@/interfaces/post";
 import Header from "@/components/Header";
 import style from "../posts.module.scss";
 import classnames from "classnames/bind";
@@ -63,7 +63,7 @@ export default function Post({ post, content }: Props) {
               <h1 className={cx("post_title")}>{post.title}</h1>
               <ul className={cx("tag_area")}>
                 {post.tag.map((text, i) => (
-                  <Link key={i} href={`/${router.query.lang}/tags/${text}`} className={cx("tag")}>
+                  <Link key={i} href={`/tags/${text}`} className={cx("tag")}>
                     #{text}
                   </Link>
                 ))}
@@ -111,13 +111,12 @@ type Params = {
   params: {
     slug: string;
     category: string;
-    lang: string;
   };
 };
 
 export async function getStaticProps({ params }: Params) {
-  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date", "tag"], lang: params.lang });
-  console.log(post.title);
+  const [post] = await getPosts({ category: params.category, file: params.slug, fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "category", "date", "tag"] });
+  // console.log(post.title);
   // console.log(post.content);
   // const content = await markdownToHtml(post.content || "");
   const content = await serialize(post.content, {
@@ -137,14 +136,15 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPosts({ fields: ["slug", "category", "lang"] });
+  const posts = await getPosts({ fields: ["slug", "category"] });
   let paths = [];
+  console.log(posts);
+
   for (let i in posts) {
     const post = posts[i];
 
     paths.push({
       params: {
-        lang: post.lang,
         category: post.category,
         slug: post.slug,
       },

@@ -5,7 +5,6 @@ import React from "react";
 import style from "./PostList.module.scss";
 import Image from "next/image";
 import moment from "moment";
-import { useRouter } from "next/router";
 
 const cx = classNames.bind(style);
 
@@ -14,15 +13,9 @@ interface PostListProps {
 }
 
 export const PostList = ({ postList }: PostListProps) => {
-  const router = useRouter();
-  const lang = router.query.lang;
-  // const {
-  //   query: { lang },
-  // } = useRouter();
   return (
     <div className={cx("post_list")}>
       {postList.map((post, i) => {
-        console.log(post.title, moment(post.date, "YYYYMMDD-HH:mm:ss").fromNow());
         const fromNow = moment(post.date, "YYYYMMDD-HH:mm:ss").fromNow();
         const date = String(fromNow).includes("hours") ? fromNow : moment(post.date).format("MMM D");
         return (
@@ -31,14 +24,14 @@ export const PostList = ({ postList }: PostListProps) => {
               <Image src={post.coverImage} className={cx("thumbnail")} alt={post.title} width={100} height={100} />
             </Link> */}
             <div className={cx("text_area")}>
-              <Link className={cx("link")} href={`/${lang}/posts/${post.category}/${post.slug}`}>
+              <Link className={cx("link")} href={`/posts/${post.category}/${post.slug}`}>
                 <strong className={cx("title")}>{post.title}</strong>
                 {/* <p className={cx("description")}>{post.description}</p> */}
               </Link>
               <ul className={cx("tag_list")}>
                 {post.tag.map((tag, i) => (
                   <li className={cx("tag_item")} key={i}>
-                    <Link className={cx("tag_link")} href={`/${lang}/tags/${tag}`}>
+                    <Link className={cx("tag_link")} href={`/tags/${tag}`}>
                       <span>#</span>
                       {tag}
                     </Link>
