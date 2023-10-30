@@ -73,7 +73,7 @@ export async function getStaticPaths() {
     if (post.tag) tags = [...tags, ...post.tag];
   }
   tags = tags.filter((tag, index) => tags.indexOf(tag) === index);
-  console.log(tags);
+  // console.log(tags);
 
   let paths: any[] = [];
 
