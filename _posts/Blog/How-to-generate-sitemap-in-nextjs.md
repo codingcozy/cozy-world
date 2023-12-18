@@ -38,7 +38,7 @@ const prettier = require("prettier");
 
 const getDate = new Date().toISOString();
 
-const YOUR_AWESOME_DOMAIN = "https://cozy-coder.com";
+const YOUR_AWESOME_DOMAIN = "https://cozycod.ing";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 const langList = ["ko", "en", "ja"];

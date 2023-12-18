@@ -22,7 +22,7 @@ type Props = {
 
 export default function Post({ posts, categories, category }: Props) {
   const router = useRouter();
-  const title = `Cozy Coder | Post`;
+  const title = `Cozy Coding | Post`;
   // if (!router.isFallback && !project?.slug) {
   //   return <ErrorPage statusCode={404} />;
   // }

@@ -30,7 +30,7 @@ type Props = {
 
 export default function Project({ project, content }: Props) {
   const router = useRouter();
-  const title = `${project.title} | Cozy Coder`;
+  const title = `${project.title} | Cozy Coding`;
   if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -57,10 +57,15 @@ export default function Project({ project, content }: Props) {
                   />
                 </div>
                 <p className={cx("project_description")}>{project.description}</p>
-                <h3 className={cx("demo_title")}>Demo</h3>
-                <div className={cx("ifram_wrap")}>
-                  <iframe className={cx("iframe")} src={project.url} width={"200%"} />
-                </div>
+                {project.url && (
+                  <>
+                    <h3 className={cx("demo_title")}>Demo</h3>
+                    <div className={cx("ifram_wrap")}>
+                      <iframe className={cx("iframe")} src={project.url} width={"200%"} />
+                    </div>
+                  </>
+                )}
+
                 <GoogleAd></GoogleAd>
                 <div className={cx("post_content")}>
                   <MDXRemote {...content} components={components} />

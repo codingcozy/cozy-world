@@ -22,7 +22,7 @@ type Props = {
 
 export default function Project({ projects }: Props) {
   const router = useRouter();
-  const title = `Cozy Coder | Projects`;
+  const title = `Cozy Coding | Projects`;
   // if (!router.isFallback && !project?.slug) {
   //   return <ErrorPage statusCode={404} />;
   // }

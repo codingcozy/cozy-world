@@ -13,7 +13,7 @@ const Header = () => {
     <header className={cx("header")}>
       <div className={cx("inner")}>
         <strong className={cx("title")}>
-          <Link href={`/`}>Cozy Coder</Link>
+          <Link href={`/`}>Cozy Coding</Link>
         </strong>
         <nav className={cx("nav_area")}>
           <a href={"https://www.buymeacoffee.com/cozycoder"} target="_blank" className={cx("nav_item")}>
