@@ -1,177 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cozycod.ing/projects</loc>
+    <loc>https://cozy-coder.com/posts</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/tags</loc>
+    <loc>https://cozy-coder.com/projects</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/posts</loc>
+    <loc>https://cozy-coder.com/tags</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/posts/Blog</loc>
+    <loc>https://cozy-coder.com/posts/Blog</loc>
   </url>
   <url>
-    <loc>https://cozycod.ing/posts/CSS</loc>
+    <loc>https://cozy-coder.com/posts/CSS</loc>
   </url>
   <url>
-    <loc>https://cozycod.ing/posts/Html</loc>
+    <loc>https://cozy-coder.com/posts/Html</loc>
   </url>
   <url>
-    <loc>https://cozycod.ing/posts/Nextjs</loc>
-  </url>
-
-  <url>
-    <loc>https://cozycod.ing/projects/01-iphone-calculator</loc>
+    <loc>https://cozy-coder.com/posts/Nextjs</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/02-snake-game</loc>
+    <loc>https://cozy-coder.com/projects/01-iphone-calculator</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/03-apple-pay</loc>
+    <loc>https://cozy-coder.com/projects/02-snake-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/04-dino-game</loc>
+    <loc>https://cozy-coder.com/projects/03-apple-pay</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/05-whack-a-mole</loc>
+    <loc>https://cozy-coder.com/projects/04-dino-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/06-cat-matching-game</loc>
+    <loc>https://cozy-coder.com/projects/05-whack-a-mole</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/07-tetris-game</loc>
+    <loc>https://cozy-coder.com/projects/06-cat-matching-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/08-flappy-bird</loc>
+    <loc>https://cozy-coder.com/projects/07-tetris-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/09-instagram-signin</loc>
+    <loc>https://cozy-coder.com/projects/08-flappy-bird</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/10-2048-game</loc>
+    <loc>https://cozy-coder.com/projects/09-instagram-signin</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/11-pong-game</loc>
+    <loc>https://cozy-coder.com/projects/10-2048-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/13-othello-game</loc>
+    <loc>https://cozy-coder.com/projects/11-pong-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/14-space-simulation</loc>
+    <loc>https://cozy-coder.com/projects/13-othello-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/15-apple-watch</loc>
+    <loc>https://cozy-coder.com/projects/14-space-simulation</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/16-tictactoe</loc>
+    <loc>https://cozy-coder.com/projects/15-apple-watch</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/17-weather-app</loc>
+    <loc>https://cozy-coder.com/projects/16-tictactoe</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/18-missile-game</loc>
+    <loc>https://cozy-coder.com/projects/17-weather-app</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/19-magic-keyboard</loc>
+    <loc>https://cozy-coder.com/projects/18-missile-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/20-poop-game</loc>
+    <loc>https://cozy-coder.com/projects/19-magic-keyboard</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/21-music-player</loc>
+    <loc>https://cozy-coder.com/projects/20-poop-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/22-chatgpt</loc>
+    <loc>https://cozy-coder.com/projects/21-music-player</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/23-wordgame</loc>
+    <loc>https://cozy-coder.com/projects/22-chatgpt</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/24-minesweeper</loc>
+    <loc>https://cozy-coder.com/projects/23-wordgame</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/25-notion-kanban-board</loc>
+    <loc>https://cozy-coder.com/projects/24-minesweeper</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/26-painter-app</loc>
+    <loc>https://cozy-coder.com/projects/25-notion-kanban-board</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/27-animated-signup</loc>
+    <loc>https://cozy-coder.com/projects/26-painter-app</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/28-google-search</loc>
+    <loc>https://cozy-coder.com/projects/27-animated-signup</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/29-netflix-landing</loc>
+    <loc>https://cozy-coder.com/projects/28-google-search</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/projects/30-watermelon-game</loc>
+    <loc>https://cozy-coder.com/projects/29-netflix-landing</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/posts/Blog/How-to-add-adsense-in-nextjs-blog</loc>
+    <loc>https://cozy-coder.com/projects/30-watermelon-game</loc>
   </url>
 
   <url>
-    <loc>https://cozycod.ing/posts/Blog/How-to-generate-sitemap-in-nextjs</loc>
-  </url>
-
-  <url>
-    <loc>https://cozycod.ing/posts/Blog/How-to-use-markdown-it</loc>
+    <loc>https://cozy-coder.com/posts/CSS/2023-08-23-how-to-css-blur</loc>
   </url>
 
   <url>
     <loc
-      >https://cozycod.ing/posts/Html/2023-08-23-Easiest-way-to-create-modifiable-elements</loc
+      >https://cozy-coder.com/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image</loc
     >
   </url>
 
   <url>
     <loc
-      >https://cozycod.ing/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide</loc
+      >https://cozy-coder.com/posts/Html/2023-08-23-Easiest-way-to-create-modifiable-elements</loc
     >
-  </url>
-
-  <url>
-    <loc>https://cozycod.ing/posts/CSS/2023-08-23-how-to-css-blur</loc>
   </url>
 
   <url>
     <loc
-      >https://cozycod.ing/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image</loc
+      >https://cozy-coder.com/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide</loc
     >
+  </url>
+
+  <url>
+    <loc
+      >https://cozy-coder.com/posts/Blog/How-to-add-adsense-in-nextjs-blog</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://cozy-coder.com/posts/Blog/How-to-generate-sitemap-in-nextjs</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://cozy-coder.com/posts/Blog/How-to-use-markdown-it</loc>
   </url>
 </urlset>
