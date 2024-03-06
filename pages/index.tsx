@@ -38,7 +38,7 @@ export default function Home({ allPosts, allProjects }: HomeProps) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"] });
+  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag", "readingTime"] });
   const allProjects = getAllProjects(["title", "date", "slug", "author", "coverImage", "description", "ogImage"]);
   return {
     props: { allPosts, allProjects },
