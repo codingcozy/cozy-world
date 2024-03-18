@@ -15,6 +15,8 @@ ogImage:
 
 <a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=_QVOWzqdn3A"><img src="https://img.youtube.com/vi/_QVOWzqdn3A/hqdefault.jpg" width="600" height="300" /></a>
 
+<GoogleAd />
+
 ### html
 
 <GoogleAd/>

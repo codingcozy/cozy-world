@@ -15,6 +15,8 @@ ogImage:
 
 <a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=a3QeiBbQzRA"><img src="https://img.youtube.com/vi/a3QeiBbQzRA/hqdefault.jpg" width="600" height="300" /></a>
 
+<GoogleAd />
+
 ### html
 
 ```html
@@ -143,8 +145,8 @@ ogImage:
               <button type="button" class="question" aria-expanded="false">What is Netflix?</button>
               <div class="answer">
                 <p>
-                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever
-                  you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch
+                  as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
                 </p>
               </div>
             </li>
@@ -159,8 +161,8 @@ ogImage:
               <button type="button" class="question" aria-expanded="false">What is Netflix?</button>
               <div class="answer">
                 <p>
-                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever
-                  you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch
+                  as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
                 </p>
               </div>
             </li>
@@ -175,8 +177,8 @@ ogImage:
               <button type="button" class="question" aria-expanded="false">What is Netflix?</button>
               <div class="answer">
                 <p>
-                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever
-                  you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                  Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch
+                  as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
                 </p>
               </div>
             </li>

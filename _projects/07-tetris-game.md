@@ -15,6 +15,8 @@ ogImage:
 
 <a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=iPNHzU7b2YQ"><img src="https://img.youtube.com/vi/iPNHzU7b2YQ/hqdefault.jpg" width="600" height="300" /></a>
 
+<GoogleAd />
+
 ### html
 
 <GoogleAd/>
@@ -69,12 +71,12 @@ body {
   border: 5px solid #3e5eba;
   margin: 0 auto;
   position: relative;
-  background: repeating-linear-gradient(rgba(22, 28, 67, 0.8), rgba(22, 28, 67, 0.8) 20px, rgba(23, 27, 63, 0.8) 20px, rgba(23, 27, 63, 0.8) 40px), repeating-linear-gradient(90deg, rgba(22, 28, 67, 0.8), rgba(22, 28, 67, 0.8) 20px, rgba(
-          23,
-          27,
-          63,
+  background: repeating-linear-gradient(rgba(22, 28, 67, 0.8), rgba(22, 28, 67, 0.8) 20px, rgba(23, 27, 63, 0.8) 20px, rgba(23, 27, 63, 0.8) 40px), repeating-linear-gradient(90deg, rgba(22, 28, 67, 0.8), rgba(
+          22,
+          28,
+          67,
           0.8
-        ) 20px, rgba(23, 27, 63, 0.8) 40px);
+        ) 20px, rgba(23, 27, 63, 0.8) 20px, rgba(23, 27, 63, 0.8) 40px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 

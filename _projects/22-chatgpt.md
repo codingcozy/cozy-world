@@ -15,6 +15,8 @@ ogImage:
 
 <a class="youtube" target="_blank" href="https://www.youtube.com/watch?v=8rV_pMaq1Oc"><img src="https://img.youtube.com/vi/8rV_pMaq1Oc/hqdefault.jpg" width="600" height="300" /></a>
 
+<GoogleAd />
+
 ### html
 
 <GoogleAd/>
@@ -90,7 +92,10 @@ ogImage:
           </label>
           <button class="btn_send" type="button" id="btn_send" disabled>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="send_icon">
-              <path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z" fill="#6F7181"></path>
+              <path
+                d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
+                fill="#6F7181"
+              ></path>
             </svg>
             <span class="blind">send</span>
           </button>
