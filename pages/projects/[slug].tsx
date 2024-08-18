@@ -78,8 +78,9 @@ export default function Project({ project, content }: Props) {
 
                 <GoogleAd></GoogleAd>
                 <p className={cx("amazon_text")}>
-                  Some product links are affiliate links which means <br />
-                  if you something we'll receive a small commission.
+                  {
+                    "Some product links are affiliate links which means \n if you something we'll receive a small commission."
+                  }
                 </p>
                 <AmazonBanner></AmazonBanner>
 
