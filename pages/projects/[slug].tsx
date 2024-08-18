@@ -17,6 +17,7 @@ import remarkDirective from "remark-directive";
 import { myRemarkPlugin } from "../posts/[category]/[slug]";
 import { useEffect, useState } from "react";
 import { setInterval } from "timers";
+import AmazonBanner from "@/components/AmazonBanner";
 
 const md = markdownIt({ html: true }).use(highlightjs);
 
@@ -32,30 +33,11 @@ type Props = {
 
 export default function Project({ project, content }: Props) {
   const router = useRouter();
-  const [isClicked, setIsClicked] = useState(false);
-  const [isReadyClose, setIsReadyClose] = useState(false);
-  const [countdown, setCountdown] = useState(10);
+
   const title = `${project.title} | Cozy Coding`;
   if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
-
-  useEffect(() => {
-    if (countdown > 0) {
-      setTimeout(() => {
-        setCountdown(countdown - 1);
-      }, 1000);
-    }
-  }, [countdown]);
-
-  const onClickLink = (e) => {
-    setIsClicked(true);
-    document.body.style.overflow = "visible";
-  };
 
   return (
     <>
@@ -99,31 +81,7 @@ export default function Project({ project, content }: Props) {
                   Some product links are affiliate links which means <br />
                   if you something we'll receive a small commission.
                 </p>
-                {!isClicked && (
-                  <div className={cx("amazon_wrap")}>
-                    <div className={cx("amazon_content")}>
-                      <a
-                        className={cx("amazon_link")}
-                        href="https://amzn.to/4fMfjrh"
-                        target="_blank"
-                        onClick={onClickLink}
-                      >
-                        <span>{"Visit Amazon and check the code"}</span>
-                      </a>
-                      {countdown > 0 ? (
-                        <p className={cx("close_button")}>{countdown}</p>
-                      ) : (
-                        <button
-                          type="button"
-                          className={cx("close_button")}
-                          onClick={onClickLink}
-                        >
-                          <span className={cx("close_icon")}></span>
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                )}
+                <AmazonBanner></AmazonBanner>
 
                 <div className={cx("post_content")}>
                   <MDXRemote {...content} components={components} />
