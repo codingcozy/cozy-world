@@ -51,7 +51,19 @@ export default function Post({ posts, categories }: Props) {
 }
 
 export async function getStaticProps() {
-  const allPosts = await getPosts({ fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "category", "tag"] });
+  const allPosts = await getPosts({
+    fields: [
+      "title",
+      "date",
+      "slug",
+      "author",
+      "coverImage",
+      "description",
+      "ogImage",
+      "category",
+      "tag",
+    ],
+  });
   const categories = await getPostCategories();
   return {
     props: {
