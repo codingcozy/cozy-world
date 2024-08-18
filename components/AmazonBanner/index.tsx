@@ -26,7 +26,7 @@ const AmazonBanner = () => {
     }
   }, [countdown]);
 
-  const onClickLink = (e) => {
+  const onClickLink = () => {
     setIsClicked(true);
     document.body.style.overflow = "visible";
   };
