@@ -39,7 +39,7 @@ export default function Document() {
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-TK5CQ2GCKX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-D2TMEJ0LSX"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -47,7 +47,7 @@ export default function Document() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-TK5CQ2GCKX');`,
+          gtag('config', 'G-D2TMEJ0LSX');`,
           }}
         ></script>
         <Script
