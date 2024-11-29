@@ -39,7 +39,7 @@ export default function Document() {
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-D2TMEJ0LSX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QR9L0EBP6T"
         ></script>
         <script
           dangerouslySetInnerHTML={{
